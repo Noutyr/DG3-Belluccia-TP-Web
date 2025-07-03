@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo de Clases CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .demo-box {
+      border: 1px solid #dee2e6;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body class="container py-5">
+
+  <h1 class="mb-5">Demo Visual de Clases Personalizadas</h1>
+
+  <section class="demo-box">
+    <h2 class="h2-custom">Títulos personalizados</h2>
+    <h1 class="h1-custom">h1-custom</h1>
+    <h2 class="h2-custom">h2-custom</h2>
+    <h3 class="h3-custom">h3-custom</h3>
+    <h4 class="h4-custom">h4-custom</h4>
+  </section>
+
+  <section class="demo-box">
+    <h2 class="h2-custom">Textos personalizados</h2>
+    <p class="p-custom">Este es un párrafo con clase <code>.p-custom</code></p>
+    <p class="lead-custom">Este es un texto <code>.lead-custom</code> para destacar contenido</p>
+  </section>
+
+  <section class="demo-box bg-cover" style="background-image: url('https://imageplaceholder.net/1200x400');">
+    <h2 class="h2-custom text-white text-center section-spacing">Fondo con <code>.bg-cover</code></h2>
+  </section>
+
+  <section class="demo-box bg-overlay-light">
+    <h2 class="h2-custom">Fondo con <code>.bg-overlay-light</code></h2>
+    <p class="p-custom">Este fondo tiene transparencia blanca y blur.</p>
+  </section>
+
+  <section class="demo-box bg-overlay-dark">
+    <h2 class="h2-custom">Fondo con <code>.bg-overlay-dark</code></h2>
+    <p class="p-custom">Este fondo tiene overlay oscuro con texto blanco.</p>
+  </section>
+
+  <section class="demo-box text-center">
+    <h2 class="h2-custom text-uppercase-custom">Texto transformado</h2>
+    <p class="text-muted-custom">Texto con clase <code>.text-muted-custom</code></p>
+    <p class="text-bold">Texto con clase <code>.text-bold</code></p>
+  </section>
+
+  <section class="demo-box">
+    <h2 class="h2-custom">Espaciado</h2>
+    <div class="section-spacing bg-light text-center">.section-spacing</div>
+    <div class="section-spacing-sm bg-secondary text-white text-center mt-3">.section-spacing-sm</div>
+  </section>
+
+  <section class="demo-box">
+    <h2 class="h2-custom">Imagen redondeada</h2>
+    <img src="https://imageplaceholder.net/400x300" class="img-rounded img-fluid" alt="Demo img">
+  </section>
+
+</body>
+</html>

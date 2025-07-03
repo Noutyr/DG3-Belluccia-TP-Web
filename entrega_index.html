@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Colecclub - Cigna Rafaela</title>
+    <link
+      href="miniweb/miniweb.css"
+      rel="stylesheet" />
+    <link
+      href="miniweb/colorschemes.css"
+      rel="stylesheet" />
+    <link
+      href="miniweb/cursor.css"
+      rel="stylesheet" />
+    <script
+      src="miniweb/miniweb.js"
+      async></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  </head>
+  <body>
+    <audio
+      id="SFX1"
+      src="https://files.catbox.moe/l8ysdy.wav"
+      type="audio/wav"
+      preload="auto"></audio>
+    <section class="container">
+      <div class="flavor">
+        <div
+          id="themePrev"
+          class="btn-flavor"
+          onmouseover="sfxMouse ();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-skip-start-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z" />
+          </svg>
+        </div>
+        <span id="flavorname">Default</span>
+        <div
+          id="themeNext"
+          class="btn-flavor"
+          onmouseover="sfxMouse ();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-skip-end-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z" />
+          </svg>
+        </div>
+      </div>
+      <div class="coninfo">
+        <i class="bi bi-skip-start-fill"></i>
+        <div
+          class="info-btn close"
+          onmouseover="sfxMouse ();">
+          x
+        </div>
+        <!--<div class="info-btn info" 
+          onmouseover="sfxMouse ();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-info"
+            viewBox="0 0 16 16">
+            <path
+              d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+          </svg>
+        </div>-->
+        <div
+          id="jumper"
+          class="catblob catblobStand"
+          alt="Cat Blob"></div>
+
+        <!--<img
+          id="jumper"
+          src="entrega/catblob_play.gif"
+          alt="Cat Blob" />-->
+        <h3>Entrega Belluccia 3</h3>
+        <p>Rafaela Cigna</p>
+      </div>
+      <div class="conaudio">
+        <div
+          class="btn-audio"
+          onmouseover="sfxMouse ();"
+          id="audioctrlPrev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-skip-start-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z" />
+          </svg>
+        </div>
+        <div
+          class="btn-audio toggleAudioStop"
+          id="audioctrlPlay"
+          onmouseover="sfxMouse ();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-pause-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5" />
+          </svg>
+        </div>
+        <div
+          class="btn-audio"
+          id="audioctrlNext"
+          onmouseover="sfxMouse ();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-skip-end-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z" />
+          </svg>
+        </div>
+        <div
+          class="btn-audio"
+          onmouseover="sfxMouse ();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-question"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+          </svg>
+        </div>
+      </div>
+      <div class="conlinks">
+        <a
+          href="./index.html"
+          class="btn"
+          onmouseover="sfxMouse ();"
+          >Página Home</a
+        ><a
+          href="./detalle.html"
+          class="btn"
+          onmouseover="sfxMouse ();"
+          >Página Detalle</a
+        ><a
+          href="https://github.com/Juanmcompa/PlantillaTPWebDGBelluccia"
+          class="btn"
+          onmouseover="sfxMouse ();"
+          >Plantilla Original</a
+        >
+      </div>
+    </section>
+  </body>
+</html>

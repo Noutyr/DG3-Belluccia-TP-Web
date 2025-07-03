@@ -1,0 +1,114 @@
+.Ocean {
+  /*---- Colors ----*/
+  --bg-color: #000924;
+  --bg-stars: #093659;
+  --bg-card: #145d87;
+  --bg-sec-clr: #228399;
+  --cat-clr: #093659;
+  --cat-fill: #d9ffe2;
+  --bg-img-dark: url("starsbgbig_inv.gif");
+  --bg-img-light: url("starsbgbig.gif");
+
+  /* Text */
+  --txt-clr: #d9ffe2;
+  --txt-head-clr: #d9ffe2;
+  --txt-sec-clr: #d9ffe2;
+
+  /* Buttons */
+  --btn-txt: #145d87;
+  --btn-clr: #73f0c6;
+  --btn-txt-h: #d9ffe2;
+  --btn-clr-h: #31b0b0;
+}
+
+.Wine {
+  /*---- Colors ----*/
+  --bg-color: #221b28;
+  --bg-stars: #8a1f52;
+  --bg-card: #add79c;
+  --bg-sec-clr: #f7d69b;
+  --cat-clr: #8a1f52;
+  --cat-fill: #f7d69b;
+  --bg-img-dark: url("starsbgbig_inv.gif");
+  --bg-img-light: url("starsbgbig.gif");
+
+  /* Text */
+  --txt-clr: #3e2b4f;
+  --txt-head-clr: #3e2b4f;
+  --txt-sec-clr: #8a1f52;
+
+  /* Buttons */
+  --btn-txt: #f7d69b;
+  --btn-clr: #d24646;
+  --btn-txt-h: #add79c;
+  --btn-clr-h: #324b6e;
+}
+
+.Old {
+  /*---- Colors ----*/
+  --bg-color: #252528;
+  --bg-stars: #5b4d4c;
+  --bg-card: #c9c1b0;
+  --bg-sec-clr: #f6e5d3;
+  --cat-clr: #556967;
+  --cat-fill: #f6e5d3;
+  --bg-img-dark: url("starsbgbig_inv.gif");
+  --bg-img-light: url("starsbgbig.gif");
+
+  /* Text */
+  --txt-clr: #252528;
+  --txt-head-clr: #252528;
+  --txt-sec-clr: #393939;
+
+  /* Buttons */
+  --btn-txt: #b3cac9;
+  --btn-clr: #556967;
+  --btn-txt-h: #799694;
+  --btn-clr-h: #0d1013;
+}
+
+.Carbon {
+  /*---- Colors ----*/
+  --bg-color: #150e10;
+  --bg-stars: #272739;
+  --bg-card: #393849;
+  --bg-sec-clr: #4f5a64;
+  --cat-clr: #3b4152;
+  --cat-fill: #cfd8da;
+  --bg-img-dark: url("starsbgbig_inv.gif");
+  --bg-img-light: url("starsbgbig.gif");
+
+  /* Text */
+  --txt-clr: #a5b6b9;
+  --txt-head-clr: #cfd8da;
+  --txt-sec-clr: #a5b6b9;
+
+  /* Buttons */
+  --btn-txt: #77888c;
+  --btn-clr: #272739;
+  --btn-txt-h: #3b4152;
+  --btn-clr-h: #77888c;
+}
+
+.themeTester {
+  /*---- Colors ----*/
+  --bg-color: #150e10;
+  --bg-stars: #272739;
+  --bg-card: #393849;
+  --bg-sec-clr: #4f5a64;
+  --cat-clr: #3b4152;
+  --cat-fill: #cfd8da;
+  --bg-img-dark: url("starsbgbig_inv.gif");
+  --bg-img-light: url("starsbgbig.gif");
+
+  /* Text */
+  --txt-clr: #a5b6b9;
+  --txt-head-clr: #cfd8da;
+  --txt-sec-clr: #a5b6b9;
+
+  /* Buttons */
+  --btn-txt: #77888c;
+  --btn-clr: #272739;
+  --btn-txt-h: #3b4152;
+  --btn-clr-h: #77888c;
+}

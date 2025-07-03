@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geo:ital@0;1&family=Jacquard+24&family=Jacquarda+Bastarda+9&family=Sarpanch:wght@400;500;600;700;800;900&family=Silkscreen:wght@400;700&family=Tiny5&display=swap");
+:root {
+  /*---- Colors ----*/
+  --bg-color: #000000;
+  --bg-stars: #696969;
+  --bg-card: #a3a0a0;
+  --bg-sec-clr: #d8d8d8;
+  --cat-clr: #000000;
+  --cat-fill: #fff;
+  --bg-img-dark: url("starsbgbig_inv.gif");
+  --bg-img-light: url("starsbgbig.gif");
+
+  /* Text */
+  --txt-clr: #000000;
+  --txt-head-clr: #000000;
+  --txt-sec-clr: #575757;
+  --font-p: "Tiny5", sans-serif;
+  --font-h: "Tiny5", sans-serif;
+  --font-alt: "Silkscreen", sans-serif;
+
+  /* Buttons */
+  --btn-txt: #262626;
+  --btn-clr: #ffffff;
+  --btn-txt-h: #ffffff;
+  --btn-clr-h: #000;
+
+  /*---- Sizes & Margins ----*/
+  --pad-xs: 0.3rem;
+  --pad-xsm: 0.5rem;
+  --pad-sm: 1rem;
+  --pad-md: 1.5rem;
+  --pad-bg: 2.5rem;
+
+  --b-rad: 0.7em;
+
+  /*---- Text Sizes ----*/
+  --txt-bg: 1.5em;
+  --txt-md: 1em;
+  --txt-sm: 0.8em;
+  --txt-xs: 0.5em;
+
+  /*---- Speed ----*/
+  --sp-small: 250ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: var(--bg-img-dark);
+  background-color: var(--bg-stars);
+  background-blend-mode: darken;
+  height: 100dvh;
+  font-family: var(--font-p);
+
+  /* Center */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  place-items: center;
+}
+
+body::after {
+  content: "";
+  display: block;
+  background-color: var(--bg-color);
+  mix-blend-mode: lighten;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------ Skin Flavor ------*/
+.flavor {
+  font-family: var(--font-alt);
+
+  position: absolute;
+  left: 220px;
+  /*clip-path: path("M 0,0 L 160,0 L 190,30 L 30,30 L 0,0 Z");*/
+  background-color: var(--btn-clr);
+  color: var(--btn-txt);
+  /*clip-path: path("M 0,0 L 170,0 L 200,30 L 0,30 L 0,0 Z");
+  width: 200px;*/
+  clip-path: path("M 0,0 L 220,0 L 250,31 L 0,31 L 0,0 Z");
+  width: 280px;
+  height: 30px;
+  text-align: center;
+  padding: 0px calc(var(--pad-bg) + 1rem) 0px var(--pad-md);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#flavorname {
+  margin: auto;
+}
+
+.btn-flavor {
+  color: var(--btn-txt);
+  transition: var(--sp-small);
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+.btn-flavor > svg {
+  position: relative;
+  top: 2px;
+  height: 24px;
+  width: 24px;
+  transition: var(--sp-small);
+}
+
+.btn-flavor > svg:hover {
+  color: var(--bg-sec-clr);
+  height: 28px;
+  width: 28px;
+}
+
+/*--------- Containers General CFG ---------*/
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  max-width: 500px;
+  height: 350px;
+  /*clip-path: path("M 0,0 L 220,0 L 250,30 L 470,30 L 500,60 L 500,320 L 280,320 L 250,290 L 30,290 L 0,260 L 0,0 Z");*/
+}
+
+/*------ Containers Details ------*/
+
+.coninfo {
+  background-image: url("../miniweb/starsbgbig_inv.gif");
+  background-blend-mode: darken;
+  background-color: var(--bg-sec-clr);
+  order: 1;
+  width: 50%;
+  width: 250px;
+  height: 290px;
+  padding: var(--pad-bg) 0 var(--pad-xs);
+  clip-path: path("M 0,0 L 220,0 L 251,30 L 251,291 L 30,291 L 0,260 L 0,0 Z");
+
+  /*Content*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coninfo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-card);
+  mix-blend-mode: lighten;
+  z-index: -1;
+}
+
+.conaudio {
+  background-color: var(--bg-card);
+  order: 2;
+  gap: 0.5em;
+  width: fit-content;
+  height: fit-content;
+  padding: 0 calc(var(--pad-xs) * 1.2) calc(var(--pad-xs) * 1.2);
+  /*border-radius: 0 0 var(--pad-xs) var(--pad-xs);*/
+
+  position: relative;
+  right: 1.5em;
+
+  /*Center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*inset: bottom left;*/
+}
+
+.conlinks {
+  background-image: url("../miniweb/starsbgbig_inv.gif");
+  background-blend-mode: darken;
+  background-color: var(--bg-sec-clr);
+  order: 3;
+  width: 250px;
+  height: 290px;
+  gap: var(--pad-sm);
+  position: relative;
+  padding: var(--pad-md);
+
+  top: 30px;
+  clip-path: path("M 0,0 L 220,0 L 250,30 L 250,290 L 30,290 L 0,260 L 0,0 Z");
+
+  /* Center */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conlinks::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-card);
+  mix-blend-mode: lighten;
+  z-index: -1;
+}
+
+/*--- Link Buttons ---*/
+.btn {
+  background-color: var(--btn-clr);
+  border: 3px var(--btn-clr) solid;
+  width: 100%;
+  height: fit-content;
+  padding: var(--pad-xsm) var(--pad-md);
+  transition: var(--sp-small);
+
+  /*Text*/
+  color: var(--btn-txt);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--btn-clr-h);
+  color: var(--btn-txt-h);
+  border: 3px var(--btn-clr-h) solid;
+}
+
+/*--- Audio Buttons ---*/
+.btn-audio {
+  color: var(--btn-txt);
+  border: var(--btn-clr) 3px solid;
+  background-color: var(--btn-clr);
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border-radius: var(--b-rad);*/
+  transition: var(--sp-small);
+}
+
+.btn-audio:hover {
+  color: var(--btn-txt-h);
+  border: var(--btn-clr-h) 3px solid;
+  background-color: var(--btn-clr-h);
+}
+
+.btn-audio:hover > svg {
+  height: 20px;
+  width: 20px;
+}
+.btn-audio > svg {
+  height: 24px;
+  width: 24px;
+}
+
+.info-btn {
+  font-family: var(--font-alt);
+  color: var(--btn-txt);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding-top: .2em;
+    padding-left: .1em;*/
+
+  border: var(--btn-clr) 2px solid;
+
+  background-color: var(--btn-clr);
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  transition: var(--sp-small);
+}
+.info-btn:hover {
+  color: var(--btn-txt-h);
+  border: 2px inset;
+  border: var(--btn-clr-h) 2px solid;
+  background-color: var(--btn-clr-h);
+}
+
+.close {
+  top: 0.5em;
+  left: 0.5em;
+}
+
+.info {
+  opacity: 0;
+  top: 0.5em;
+  left: calc(1em + 24px);
+}
+
+/*--------- Audio Play Toggle ---------*/
+
+.toggleAudioStop svg:first-child {
+  display: none;
+}
+.toggleAudioStop svg:last-child {
+  display: block;
+}
+
+.toggleAudioPlay svg:first-child {
+  display: block;
+}
+
+.toggleAudioPlay svg:last-child {
+  display: none;
+}
+
+/*--------- Catblob ---------*/
+
+.catblob {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.catblobJump {
+  /*Image*/
+  background-image: url("./catblob_play.gif");
+  background-position: center;
+
+  /*Color*/
+  mask-image: url("./catblob_play.gif");
+  background-color: var(--cat-clr);
+  background-blend-mode: lighten;
+}
+.catblobStand {
+  /*Image*/
+  background-image: url("./catblob_stop.gif");
+  background-position: center;
+
+  /*Color*/
+  mask-image: url("./catblob_stop.gif");
+  background-color: var(--cat-clr);
+  background-blend-mode: lighten;
+}
+
+.catblob::after {
+  content: "";
+  display: block;
+  background-color: var(--cat-fill);
+  mix-blend-mode: darken;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/*--------- Text CFG ---------*/
+
+p {
+  color: var(--txt-clr);
+  font-family: var(--font-p);
+}
+
+h3 {
+  margin: var(--pad-xs) 0;
+  color: var(--txt-head-clr);
+  font-family: var(--font-h);
+}
