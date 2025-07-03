@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* 1. VARIABLES DE DISEÑO */
 :root {
   --primary-color: #2aff63;
@@ -28,9 +29,9 @@ body {
   color: var(--light-color);
   background-color: var(--dark-color);
   background-image: url("assets/bg/bg_hero.png");
-  background-position: 20% -0.5%;
+  background-position: -150px -0.5%;
   background-repeat: no-repeat;
-  background-size: 170%;
+  background-size: 160dvw;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -41,19 +42,29 @@ body {
   background-color: transparent;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 15px 0;
+  clip-path: polygon(calc(1% + 22px) 25%, calc(99% - 22px) 25%, 99% 50%, calc(99% - 22px) 75%, calc(1% + 22px) 75%, 1% 50%);
+}
+.nav-item > .btn {
+  margin: 0 -50px 0 10px;;
 }
 
 .navbar.scrolled {
   background-color: var(--secondary-dark-color);
   box-shadow: 0px 4px 20px rgba(255, 0, 0, 0.05);
+  clip-path: polygon(calc(3% + 22px) 25%, calc(97% - 22px) 25%, 97% 50%, calc(97% - 22px) 75%, calc(3% + 22px) 75%, 3% 50%);
 }
 
 .navbar-brand {
   font-weight: 600;
   font-size: 1.7rem;
   color: var(--light-color);
+  font-family: Var(--font-family-buttons);
+  font-variation-settings: "wdth" 125;
 }
 
+.navbar-brand:hover{
+  color: var(--light-color);
+}
 .accent-txt{
   color:var(--primary-color);
 }
@@ -65,8 +76,15 @@ body {
   transition: color 0.3s;
 }
 
-.nav-link:hover {
-  color: var(--primary-color);
+
+/* Ayuda: No me cambia el color del texto*/
+.nav-link:active{
+  color:var(--yellow-note)}
+  
+.nav-link {
+  &.active,&.show {
+    color: var(--yellow-note);
+  }
 }
 
 /* 4. HERO */
@@ -170,6 +188,7 @@ section h2::after {
 
 /* 6. CARDS */
 .card {
+  background-color: transparent;
   border: none;
   border-radius: 8px;
   overflow: hidden;
