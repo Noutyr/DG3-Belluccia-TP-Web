@@ -78,15 +78,9 @@ body {
 
 
 /* Ayuda: No me cambia el color del texto*/
-.nav-link:active{
-  color:var(--yellow-note)}
-  
-.nav-link {
-  &.active,&.show {
-    color: var(--yellow-note);
-  }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--yellow-note);
 }
-
 /* 4. HERO */
 .row.p-5 {
   min-height: 90vh;
@@ -128,7 +122,6 @@ p {
   transition: all 0.3s ease-in-out;
   clip-path: polygon(calc(0% + 22px) 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, calc(0% + 22px) 100%, 0% 50%);
 }
-
 
 .btn-dark {
   background-color: var(--primary-color);
