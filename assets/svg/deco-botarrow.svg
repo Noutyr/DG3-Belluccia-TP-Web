@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 105 73.77">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #e5df8d;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #e5df8d;
+      }
+
+      .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="105" height="73.77"/>
+    </clipPath>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g class="cls-6">
+      <path class="cls-3" d="M104,6.87v15.83l-17.41,17.42"/>
+      <path class="cls-3" d="M18.42,40.12L1,22.7V6.87"/>
+      <path class="cls-4" d="M20.33,47.44c14.05-6.79,25.39-18.13,32.17-32.18,6.79,14.05,18.13,25.39,32.17,32.18"/>
+      <g>
+        <path class="cls-5" d="M46.24,48.62L0,2.38v7.97l41.97,41.98c1.52-1.12,2.95-2.36,4.27-3.72Z"/>
+        <path class="cls-5" d="M58.77,48.61c1.31,1.35,2.74,2.6,4.27,3.72L105,10.36V2.38l-46.23,46.22Z"/>
+      </g>
+      <path class="cls-2" d="M36.62,55.58c6.94-3.35,12.53-8.95,15.89-15.89,3.35,6.94,8.95,12.53,15.89,15.89-6.94,3.35-12.53,8.95-15.89,15.89-3.35-6.94-8.95-12.53-15.89-15.89Z"/>
+    </g>
+  </g>
+</svg>
