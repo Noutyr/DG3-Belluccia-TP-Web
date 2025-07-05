@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* 1. VARIABLES DE DISEÑO */
 :root {
@@ -42,16 +42,32 @@ body {
   background-color: transparent;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 15px 0;
-  clip-path: polygon(calc(1% + 22px) 25%, calc(99% - 22px) 25%, 99% 50%, calc(99% - 22px) 75%, calc(1% + 22px) 75%, 1% 50%);
+  clip-path: polygon(
+    calc(3% + 22px) 25%,
+    calc(97% - 22px) 25%,
+    97% 50%,
+    calc(97% - 22px) 75%,
+    calc(3% + 22px) 75%,
+    3% 50%
+  );
 }
+
 .nav-item > .btn {
-  margin: 0 -50px 0 10px;;
+  margin: 0 -50px 0 10px;
 }
 
 .navbar.scrolled {
+  --layout-padding: calc(var(--bs-gutter-x) * 0.5);
   background-color: var(--secondary-dark-color);
   box-shadow: 0px 4px 20px rgba(255, 0, 0, 0.05);
-  clip-path: polygon(calc(3% + 22px) 25%, calc(97% - 22px) 25%, 97% 50%, calc(97% - 22px) 75%, calc(3% + 22px) 75%, 3% 50%);
+  clip-path: polygon(
+    calc(3% + 22px) 25%,
+    calc(97% - 22px) 25%,
+    97% 50%,
+    calc(97% - 22px) 75%,
+    calc(3% + 22px) 75%,
+    3% 50%
+  );
 }
 
 .navbar-brand {
@@ -62,11 +78,11 @@ body {
   font-variation-settings: "wdth" 125;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: var(--light-color);
 }
-.accent-txt{
-  color:var(--primary-color);
+.accent-txt {
+  color: var(--primary-color);
 }
 
 .nav-link {
@@ -76,7 +92,8 @@ body {
   transition: color 0.3s;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: var(--yellow-note);
 }
 
@@ -94,7 +111,7 @@ h3,
 h4,
 h5 {
   font-family: var(--font-family-header);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -119,13 +136,20 @@ p {
   border-radius: 0px;
   padding: 10px 30px;
   transition: all 0.3s ease-in-out;
-  clip-path: polygon(calc(0% + 22px) 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, calc(0% + 22px) 100%, 0% 50%);
+  clip-path: polygon(
+    calc(0% + 22px) 0,
+    calc(100% - 22px) 0,
+    100% 50%,
+    calc(100% - 22px) 100%,
+    calc(0% + 22px) 100%,
+    0% 50%
+  );
 }
 
 .btn-dark {
   background-color: var(--primary-color);
   color: var(--dark-color);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: none;
@@ -137,23 +161,52 @@ p {
 }
 
 .btn-outline-dark {
-  border: 2px solid var(--primary-color);
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
   color: var(--primary-color);
-}
-.btn-outline-dark:before{
-  content: "";
   position: relative;
-  width: 100%dvh;
-  height: 100%dvw;
-  display: block;
-  z-index: -1;
-  background-color: #e35b5b;
-  clip-path: polygon(26px 0, calc(100% - 26px) 0, 100% 50%, calc(100% - 26px) 100%, 26px 100%, 0% 50%);
+  clip-path: polygon(
+    calc(0% + 22px) 0,
+    calc(100% - 22px) 0,
+    100% 50%,
+    calc(100% - 22px) 100%,
+    calc(0% + 22px) 100%,
+    0% 50%
+  );
+}
 
+.btn-outline-dark::before,
+.btn-outline-dark::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: calc(100% + 2px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2225%22%20height%3D%2250%22%20viewBox%3D%220%200%2025%2050%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M3.81596e-07%201L1.91422%201C1.91422%201%2014.767%2015.6291%2023%2025C14.767%2034.3709%2010.1473%2039.6291%201.91422%2049L0%2049%22%20stroke%3D%22%232AFF63%22%20stroke-width%3D%222%22/%3E%3C/svg%3E");
+}
+
+.btn-outline-dark::before {
+  /*clip-path: polygon(calc(1% + 24px) 2px, calc(100% - 24px) 2px, calc(100% - 2px) 50%, calc(100% - 24px) calc(100% - 2px), calc(0% + 24px) calc(100% - 2px), 2px 50%);*/
+  /*clip-path: polygon(calc(0% + 22px) 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, calc(0% + 22px) 100%, 0% 50%);*/
+  transform: translateY(-50%) scaleX(-1); /* Flip horizontal */
+  left: 0px;
+}
+.btn-outline-dark::after {
+  right: 0px;
 }
 
 .btn-outline-dark:hover {
-  border: 2px solid var(--primary-color);
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
   background-color: var(--primary-color);
   color: var(--dark-color);
 }
@@ -187,13 +240,13 @@ section h2::after {
   transition: transform 0.3s;
 }
 
-.card-line::after{
-  content:"";
+.card-line::after {
+  content: "";
   display: block;
   position: relative;
   width: 90%;
   height: 1px;
-  margin: .5rem auto -.5rem auto;
+  margin: 0.5rem auto -0.5rem auto;
   background-color: var(--yellow-note);
   z-index: 1;
 }
@@ -281,7 +334,7 @@ img.rounded-circle {
   position: relative;
 }
 
-.box-hero-content{
+.box-hero-content {
   position: relative;
   right: 60%;
   background-color: #fff;
@@ -302,7 +355,7 @@ img.rounded-circle {
 .hero-cnt-2 {
   aspect-ratio: 1/1;
   height: 205px;
-  width: auto;  
+  width: auto;
   bottom: 420px;
   left: 60px;
 }
@@ -333,20 +386,70 @@ img.rounded-circle {
 /* DECOS */
 /* ============================== */
 
-.deco-botarrow{
+.deco-botarrow {
   background-image: url(./assets/svg/deco-botarrow.svg);
   background-repeat: no-repeat;
-  width:50px;
-  height:auto;
+  width: 50px;
+  height: auto;
   align-self: center;
   aspect-ratio: 100/70;
 }
 
+.plan-border, .plan-border-highlight {
+  border-radius: 0px;
+  position: relative;
+}
+
+.plan-border::after,
+.plan-border::before {
+  position: relative;
+  height: auto;
+  width: 100%;
+  align-items: end;
+}
+
+.plan-border::before {
+  content: url(./assets/svg/deco-box-top.svg);
+}
+
+.plan-border::after {
+  content: url(./assets/svg/deco-box-bot.svg);
+}
+
+
+.plan-border-highlight::after,
+.plan-border-highlight::before {
+  position: relative;
+  height: auto;
+  width: 100%;
+  align-items: end;
+}
+
+.plan-border-highlight::before {
+  content: url(./assets/svg/deco-box-top_highlight.svg);
+}
+
+.plan-border-highlight::after {
+  content: url(./assets/svg/deco-box-bot_highlight.svg);
+}
+
+.plan-inner-border {
+  border-style: none solid none solid;
+  border-width: 0 2px 0 2px;
+  border-color: var(--secondary-color);
+  border-radius: 0px;
+}
+
+.plan-inner-border-highlight {
+  border-style: none solid none solid;
+  border-width: 0 2px 0 2px;
+  border-color: var(--yellow-note);
+  border-radius: 0px;
+}
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
 /* ============================== */
-
 
 /* TITULOS */
 .h1-custom {
@@ -358,21 +461,26 @@ img.rounded-circle {
 
 .h2-custom {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
   color: var(--yellow-note);
 }
 
 .h3-custom {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
   color: var(--yellow-note);
 }
 
 .h4-custom {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+.h5-custom {
+  font-weight: 700;
   color: var(--light-color);
 }
 
@@ -389,11 +497,10 @@ img.rounded-circle {
   color: var(--secondary-color);
 }
 
-.p-sec{
+.p-sec {
   font-size: 1rem;
   line-height: 1.6;
-  color:var(--secondary-color);
-  
+  color: var(--secondary-color);
 }
 
 /* FONDOS E IMÁGENES */
@@ -433,6 +540,10 @@ img.rounded-circle {
   color: #6c757d;
 }
 
+.list-unstyled {
+  color: var(--light-color);
+}
+
 /* ESPACIADOS */
 .section-spacing {
   padding-top: 100px;
@@ -453,9 +564,9 @@ img.rounded-circle {
     font-size: 2.5rem;
   }
   .navbar-brand {
-  font-family: var(--font-family-buttons);
-  font-weight: 700;
-  font-variation-settings: "wdth" 112.5;
+    font-family: var(--font-family-buttons);
+    font-weight: 700;
+    font-variation-settings: "wdth" 112.5;
     font-size: 1.5rem;
   }
 }
