@@ -236,7 +236,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: fit-content;
+  width: auto;
 
   /*Appareance*/
   text-decoration: none !important;
@@ -993,6 +993,7 @@ img.rounded-circle {
 }
 
 .container-plantime {
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
