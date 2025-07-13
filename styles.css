@@ -403,7 +403,7 @@ img.rounded-circle {
       rgba(13, 25, 56, 0) 60%
     ),
     linear-gradient(90deg, rgba(13, 25, 56, 0.5) 20%, rgba(13, 25, 56, 0) 50%),
-    url("/assets/bg/pat-nu-red_dk.png");
+    url("./assets/bg/pat-nu-red_dk.png");
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: 100%, 100%, 120vh auto;
   animation: cloud-bg-move 20s linear infinite;
