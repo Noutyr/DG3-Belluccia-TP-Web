@@ -43,10 +43,10 @@
 
 @keyframes cloud-bg-move {
   from {
-    background-position-y: 0, 0, 0;
+    background-position: center 0, center 0, 0 90%;
   }
 
   to {
-    background-position-y: 0, 0, 650px;
+    background-position: center 0, center 0, 120vh 90%;
   }
 }

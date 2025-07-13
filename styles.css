@@ -406,7 +406,7 @@ img.rounded-circle {
     url("/assets/bg/pat-nu-red_dk.png");
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: 100%, 100%, 120vh auto;
-  animation: cloud-bg-move 30s linear infinite;
+  animation: cloud-bg-move 20s linear infinite;
 }
 
 .bg-biblio {
@@ -1224,6 +1224,18 @@ model-viewer {
   z-index: 0;
 }
 
+model-viewer.pagdet {
+  min-width: 100%;
+  min-height: calc(200px * 100dvh);
+  width: 100%;
+  height: 80vh;
+  place-self: center;
+  margin-top: 1em;
+  margin-bottom: -0.25rem !important;
+  z-index: 0;
+  overflow: visible;
+}
+
 /** ============================== */
 /* ! CUSTOM HELPER CLASSES */
 /** ============================== */
@@ -1266,15 +1278,15 @@ model-viewer {
 }
 
 .green-book {
-  color: var(--book-green);
+  color: var(--book-green) !important;
 }
 
 .red-book {
-  color: var(--book-red);
+  color: var(--book-red) !important;
 }
 
 .blue-book {
-  color: var(--book-blue);
+  color: var(--book-blue) !important;
 }
 
 /* PÁRRAFOS Y TEXTOS */
