@@ -1,0 +1,52 @@
+/* ====================
+* ANIMACIONES 
+======================= */
+
+.float-y {
+  animation: float-y 2s infinite alternate ease-in-out;
+}
+
+.hero-cnt-1.float-y {
+  animation: float-y 2s infinite alternate ease-in-out;
+}
+
+.hero-cnt-2.float-y {
+  animation: float-y 3s infinite alternate ease-in-out;
+}
+
+.hero-cnt-3.float-y {
+  animation: float-y 2s infinite alternate ease-in-out;
+}
+
+.hero-cnt-4.float-y {
+  animation: float-y 1.5s infinite alternate ease-in-out;
+}
+
+.hero-cnt-5.float-y {
+  animation: float-y 1.7s infinite alternate ease-in-out;
+}
+
+/* ====================
+? KEYFRAMES 
+======================= */
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-10px);
+  }
+}
+
+@keyframes cloud-bg-move {
+  from {
+    background-position-y: 0, 0, 0;
+  }
+
+  to {
+    background-position-y: 0, 0, 650px;
+  }
+}

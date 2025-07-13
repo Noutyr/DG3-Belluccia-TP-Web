@@ -1,686 +1,795 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <!-- Configuración básica del documento -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Plantilla Visible - Belluccia 3</title>
 
     <!-- Tipografía desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,112.5,700;1,112.5,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
     <!-- Framework CSS de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous" />
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
 
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="styles.css" />
 
-<!-- NAVBAR: Menú de navegación fijo superior -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <!-- Logo o nombre del sitio -->
-    <a class="navbar-brand" href="#">MiWeb</a>
-    <!-- Botón para mostrar menú en mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Ítems del menú -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Equipo</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- /NAVBAR -->
+    <link rel="stylesheet" href="css/animate.css">
 
-<!-- HERO: Sección de portada con llamado a la acción -->
-<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
-  <div class="row align-items-center">
-    <!-- Texto principal -->
-    <div class="col-lg-6">
-      <h1 class="h1-custom">Hero Principal</h1>
-      <p class="p-custom">Esta sección es la primera impresión de tu web. Ideal para presentar tu propuesta de valor en pocas palabras y motivar una acción.</p>
-      <div class="d-flex gap-3 mt-4">
-        <a href="#" class="btn btn-dark">Acción Principal</a>
-        <a href="#" class="btn btn-outline-dark">Acción Secundaria</a>
-      </div>
-    </div>
-    <!-- Imagen destacada -->
-    <div class="col-lg-6 text-center">
-      <img src="https://imageplaceholder.net/500x500" class="img-fluid img-rounded" alt="Imagen Hero">
-    </div>
-  </div>
-</section>
-<!-- /HERO -->
 
-<!-- ABOUT: Sección sobre nosotros -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Sección Sobre Nosotros</h2>
-  <p class="mt-3 mb-5">Contá quién sos, qué hacés y por qué debería interesarle al visitante.</p>
-  <div class="row">
-    <!-- Tres columnas informativas -->
-    <div class="col-md-4">
-      <h4 class="h4-custom">Experiencia</h4>
-      <p class="p-custom">Un detalle de tu trayectoria o historia.</p>
-    </div>
-    <div class="col-md-4">
-      <h4 class="h4-custom">Valores</h4>
-      <p class="p-custom">¿Qué principios guían tu trabajo?</p>
-    </div>
-    <div class="col-md-4">
-      <h4 class="h4-custom">Compromiso</h4>
-      <p class="p-custom">Cómo asegurás la calidad en lo que ofrecés.</p>
-    </div>
-  </div>
-</section>
-<!-- /ABOUT -->
+    <!-- Script 3D Model -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR: Menú de navegación fijo superior -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Logo o nombre del sitio -->
+        <a
+          class="navbar-brand"
+          href="./detalle.html"
+          ><span class="accent-txt">Colec</span>Club</a
+        >
+        <!-- Botón para mostrar menú en mobile -->
+        <button
+          class="navbar-toggler"
+          typ1e="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Ítems del menú -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="./index.html"
+                >Recolectá fantasías</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./detalle.html"
+                >Temporada</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./detalle.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./detalle.html"
+                >Contacto</a
+              >
+            </li>
 
-<!-- SERVICES: Servicios o funcionalidades -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Servicios o Características</h2>
-  <p class="mb-5">Lista de servicios o aspectos que se quieren destacar.</p>
-  <div class="row">
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="https://imageplaceholder.net/100x100" class="mb-3" alt="Servicio">
-        <h5>Servicio 1</h5>
-        <p class="p-custom">Breve explicación del servicio.</p>
-      </div>
-    </div>
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="https://imageplaceholder.net/100x100" class="mb-3" alt="Servicio">
-        <h5>Servicio 1</h5>
-        <p class="p-custom">Breve explicación del servicio.</p>
-      </div>
-    </div>
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="https://imageplaceholder.net/100x100" class="mb-3" alt="Servicio">
-        <h5>Servicio 1</h5>
-        <p class="p-custom">Breve explicación del servicio.</p>
-      </div>
-    </div>
-    <!-- ... repetir estructura para más servicios ... -->
-  </div>
-</section>
-<!-- /SERVICES -->
-
-<!-- SECCIÓN A: Texto centrado sin imagen -->
-<section class="section-spacing container text-center">
-  <h2 class="display-5" class="h2-custom">Título destacado</h2>
-  <p class="lead-custom">Un texto breve para explicar o presentar algo importante.</p>
-  <div class="mt-4 d-flex justify-content-center gap-3">
-    <a href="#" class="btn btn-primary">Acción principal</a>
-    <a href="#" class="btn btn-outline-primary">Acción secundaria</a>
-  </div>
-</section>
-
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="https://imageplaceholder.net/500x400" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">Título con imagen</h2>
-      <p class="lead-custom">Descripción breve que acompaña y refuerza la propuesta.</p>
-      <a href="#" class="btn btn-primary mt-3">Saber más</a>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">Otra disposición</h2>
-      <p class="lead-custom">Sección útil para combinar mensajes con una imagen a la derecha.</p>
-      <a href="#" class="btn btn-primary mt-3">Conocé más</a>
-    </div>
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="https://imageplaceholder.net/500x400" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Imagen a la izquierda -->
-    <div class="col-md-6 text-center mb-4 mb-md-0">
-      <img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded" alt="Imagen">
-    </div>
-    <!-- Texto a la derecha -->
-    <div class="col-md-6 text-center text-md-start">
-      <h3 class="display-6" class="h3-custom">Título flexible</h3>
-      <p class="lead-custom">Podés usar este bloque para presentar información destacada acompañada de una imagen.</p>
-      <a href="#" class="btn btn-primary">Explorar</a>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN E: Beneficios con íconos centrados (Bootstrap Icons) -->
-<section class="section-spacing container text-center py-5">
-  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Alto rendimiento, tecnología avanzada</h2>
-  <div class="row">
-    <!-- Beneficio 1 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-cpu-fill fs-1 mb-3 text-primary"></i>
-      <h5>Electrónica mejorada</h5>
-      <p class="p-custom">Nuestras baterías están diseñadas para durar más y brindar mayor eficiencia energética.</p>
-    </div>
-    <!-- Beneficio 2 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-person-check-fill fs-1 mb-3 text-primary"></i>
-      <h5>Diseño ergonómico</h5>
-      <p class="p-custom">Mayor comodidad en el uso prolongado sin comprometer el rendimiento.</p>
-    </div>
-    <!-- Beneficio 3 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-gear-fill fs-1 mb-3 text-primary"></i>
-      <h5>Motor optimizado</h5>
-      <p class="p-custom">Más potencia y velocidad para trabajar con eficiencia como nunca antes.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN F: Beneficios sobre fondo de color con íconos de Bootstrap -->
-<section class="section-spacing text-center py-5">
-  <div class="container">
-    <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Beneficios del producto</h2>
-    <div class="row">
-      <!-- Ítem 1 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-speedometer2 fs-1 mb-3 text-dark"></i>
-        <h5>Velocidad</h5>
-        <p class="p-custom">Procesos más rápidos y eficientes gracias a nuestra tecnología.</p>
-      </div>
-      <!-- Ítem 2 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-battery-full fs-1 mb-3 text-dark"></i>
-        <h5>Durabilidad</h5>
-        <p class="p-custom">Componentes diseñados para resistir y durar en el tiempo.</p>
-      </div>
-      <!-- Ítem 3 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-tools fs-1 mb-3 text-dark"></i>
-        <h5>Mantenimiento simple</h5>
-        <p class="p-custom">Fácil de usar y mantener, ideal para cualquier usuario.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN G: Beneficios destacados en cards con íconos de Bootstrap -->
-<section class="section-spacing container text-center py-5">
-  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">¿Por qué elegirnos?</h2>
-  <div class="row">
-    <!-- Card 1 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-truck fs-1 mb-3 text-primary"></i>
-        <h5>Entrega rápida</h5>
-        <p class="p-custom">Recibí tu producto en tiempo récord con envíos ágiles y seguros.</p>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-headset fs-1 mb-3 text-primary"></i>
-        <h5>Atención personalizada</h5>
-        <p class="p-custom">Te acompañamos en todo el proceso con soporte real y humano.</p>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-shield-lock fs-1 mb-3 text-primary"></i>
-        <h5>Seguridad garantizada</h5>
-        <p class="p-custom">Tu información y tu compra protegidas en cada paso.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM: Presentación del equipo -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Equipo</h2>
-  <p class="p-custom">Personas clave detrás del proyecto.</p>
-  <div class="row mt-5">
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="https://imageplaceholder.net/200x200" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>Nombre Apellido</h5>
-      <p class="p-custom">Rol en el equipo</p>
-    </div>
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="https://imageplaceholder.net/200x200" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>Nombre Apellido</h5>
-      <p class="p-custom">Rol en el equipo</p>
-    </div>
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="https://imageplaceholder.net/200x200" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>Nombre Apellido</h5>
-      <p class="p-custom">Rol en el equipo</p>
-    </div>
-  </div>
-</section>
-<!-- /TEAM -->
-
-<!-- TESTIMONIALS: Opiniones de clientes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Testimonios</h2>
-  <p class="p-custom">Comentarios reales de usuarios para generar confianza.</p>
-  <div class="row">
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-  </div>
-</section>
-<!-- /TESTIMONIALS -->
-
-<!-- GALERÍA A: Grid clásico de 3 columnas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería de imágenes</h2>
-  <p class="mb-5">Una estructura simple para mostrar imágenes de manera ordenada.</p>
-  <div class="row g-4">
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
-  </div>
-</section>
-
-<!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)-->
-<section class="section-spacing container py-5">
-  <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Galería tipo Masonry</h2>
-  
-  <div class="masonry__container">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x600" alt="Imagen 2">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x350" alt="Imagen 3">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x500" alt="Imagen 4">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x250" alt="Imagen 5">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x450" alt="Imagen 6">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
-  </div>
-</section>
-
-<!-- GALERÍA C: Carrusel horizontal con tarjetas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería deslizante</h2>
-  <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 1">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 2">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 4">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 5">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./detalle.html"
+                >Iniciar sesión</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./detalle.html"
+                class="btn btn-dark"
+                >Unite a la magia</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 6">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 7">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 8">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 9">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 10">
+    </nav>
+    <!-- /NAVBAR -->
+
+    <div class="bg-bookred">
+    <!-- HERO: Sección de portada con llamado a la acción -->
+    <section
+      class="section-spacing container"
+      style="min-height: 100vh; padding-top: 100px">
+      <div class="row align-items-center justify-content-center" >
+        <!-- Texto principal -->
+        <div class="col-lg-6">
+          <h1 class="h1-custom red-book mb-2">Codex Frikus</h1>
+          <p class="p-custom mb-0">
+            Para fanáticos que buscan una experiencia completa.
+                <strong class="divider-text-start">Incluye</strong>
+          </p>
+          
+          <ul class="list-unstyled text-start mx-auto mb-5">
+            <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+            <li>
+              <i class="bi bi-check2"></i> 10% de descuento en tiendas
+              afiliadas
+            </li>
+            <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+            <li><i class="bi bi-check2"></i> Sticker pack</li>
+            <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+            <li>
+              <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
+              Variante)
+            </li>
+            <li class="highlight">
+              <i class="bi bi-check2"></i> ¡Artículo sorpresa! (Cada 3 meses)
+            </li>
+            <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
+          </ul>
+
+          <div class="row flex-nowrap">
+            <div class="col-auto pe-lg-4">
+              <p class="pagdet plan-precio">$67.500</p>
+                <div class="d-flex gap-3 mt-1">
+                <a href="./detalle.html"
+                  class="btn btn-dark"
+                  >Empezar</a>
+                </div>              
+            </div>
+
+            <div class="col-auto px-2"><div class="divider-y" style="height: 90%;"></div></div>            
+
+            <div class="col-auto ps-lg-4">
+              <strong class="d-block">Métodos de pago</strong>
+              <ul class="list-unstyled">
+                <li>Tarjeta de crédito</li>
+                <li>Mercado Pago</li>
+                <li>Transferencia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Imagen destacada -->
+        <div class="col-lg-6">
+          <model-viewer
+            disable-zoom
+            camera-controls
+            camera-orbit="120deg 72deg 95cm"
+            camera-target="auto 15cm auto"
+            environment-image="./assets/3d/golden_gate_hills_1k.hdr" 
+            src="./assets/3d/caja_rojo_abierta.glb"
+            autoplay
+            animation-name="updown"
+            alt="avatar"
+            class="pagdet"
+            exposure="1"
+            shadow-intensity="1">
+          </model-viewer>
         </div>
       </div>
+    </section>
+    <!-- /HERO -->
+
+    <!-- Contenido CAJA -->
+    <section class="section-spacing container text-center bg-contain" style="background-image: url(/assets/bg/bg_nube-izq.png);">
+      <h2 class="h2-custom mb-0">Fragmentos asegurados</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/circ_enamel.png"
+              class="mb-0"
+              alt="Servicio" />
+            <!--<h5>Servicio 1</h5>-->
+            <p class="p-custom top-line mb-1">
+              Pin esmaltado
+            </p>
+            <div class="deco-botarrow"></div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/circ_funko.png"
+              class="mb-0"
+              alt="Servicio" />
+            <!--<h5>Servicio 1</h5>-->
+            <p class="p-custom top-line mb-1">
+              Figuras exclusivas
+            </p>
+            <div class="deco-botarrow"></div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/circ_comic.png"
+              class="mb-0"
+              alt="Servicio" />
+            <!--<h5>Servicio 1</h5>-->
+            <p class="p-custom top-line mb-1">
+              Revista / Comic
+            </p>
+            <div class="deco-botarrow"></div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/circ_stickers.png"
+              class="mb-0"
+              alt="Servicio" />
+            <!--<h5>Servicio 1</h5>-->
+            <p class="p-custom top-line mb-1">
+              Sticker Pack (x2)
+            </p>
+            <div class="deco-botarrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /SERVICES -->
+
     </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
+    <!-- CONTENIDO: Artículo sorpresa -->
+    <section
+      class="section-spacing container text-center">
+      <h2 class="h2-custom mb-0">Artículo Sorpresa</h2>
+      <div class="row">
+        <!-- Primera fila -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_funko.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Figuras Funko exclusivas
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_artbook.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Artbooks y Artículos oficiales
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_specialcoll.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Ediciones especiales
+            </p>
+          </div>
+        </div>
+        
+        <!-- Segunda fila -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_indumen.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Indumentaria y accesorios
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_music.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Álbumes de música, VHS y vinilos
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_poster.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Posters únicos de alta calidad
+            </p>
+          </div>
+        </div>
+        <!-- ... repetir estructura para más servicios ... -->
+      </div>
+    </section>
+    <!-- /SERVICES -->
 
+    <div class="bg-biblio">
+    <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+    <section class="section-spacing container-fluid text-center">
+      <div class="row align-items-center justify-content-center">
+        <h2 class="h2-custom">¿Queres ver otro grimorio?</h2>
 
-<!-- GALERÍA D: Carrusel con imagen + texto encima -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería con textos</h2>
-  <div id="carouselGaleriaD" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 1">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 1</h4>
-              <p class="lead-custom">Descripción breve sobre esta imagen.</p>
+        <div class="row mt-5 mb-5 col-md-10 justify-content-center">
+          <!-- Card: Plan Básico -->
+          <div class="col-lg-4 mb-4 plan-border">
+            <div class="p-4 plan-inner-border plan-1">
+              <!-- Imagen ilustrativa -->
+              <model-viewer
+                disable-zoom
+                disable-pan
+                auto-rotate
+                auto-rotate-delay
+                camera-orbit="0deg 72deg 0.5m"
+                camera-target="auto 2.8cm auto"
+                src="./assets/3d/caja_verde.glb"
+                alt="avatar"
+                shadow-intensity="0">
+              </model-viewer>
+
+              <!-- Título y precio -->
+              <h5 class="plan-name green-book">Archimorio</h5>
+              <p class="text-primary plan-precio">$30.000</p>
+
+              <!-- Descripción -->
+              <p class="p-custom">
+                Para fanáticos que se inician en el mundo de la colección.<br />
+                <strong class="divider-text">Incluye</strong>
+              </p>
+
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-start mx-auto">
+                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+                <li>
+                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
+                  afiliadas
+                </li>
+                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+                <li><i class="bi bi-check2"></i> Sticker pack</li>
+                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+                <li class="disabled">
+                  <i class="bi bi-x"></i> Figura exclusiva (Funko Pop Variante)
+                </li>
+                <li class="disabled">
+                  <i class="bi bi-x"></i> ¡Artículo sorpresa! (Cada 3 meses)
+                </li>
+                <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
+              </ul>
+              <br />
+
+              <!-- Botón CTA -->
+              <a
+                href="./detalle.html"
+                class="btn btn-dark mt-3"
+                >Ver más</a
+              >
+              <br />
+            </div>
+          </div>
+          <!-- Card: Plan Full -->
+          <div class="col-lg-4 mb-4 plan-border">
+            <div class="p-4 plan-inner-border plan-3">
+              <!-- Imagen ilustrativa -->
+              <model-viewer
+                disable-zoom
+                disable-pan
+                auto-rotate
+                auto-rotate-delay
+                camera-orbit="0deg 72deg 0.5m"
+                camera-target="auto 2.8cm auto"
+                src="./assets/3d/caja_azul.glb"
+                alt="avatar"
+                shadow-intensity="0">
+              </model-viewer>
+
+              <!-- Título y precio -->
+              <h5 class="plan-name blue-book">Maginomicón</h5>
+              <p class="text-primary plan-precio">$120.000</p>
+
+              <!-- Descripción -->
+              <p class="p-custom">
+                Para los fanáticos que buscan trascender universos.<br />
+                <strong class="divider-text">Incluye</strong>
+              </p>
+
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-start mx-auto">
+                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+                <li>
+                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
+                  afiliadas
+                </li>
+                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+                <li><i class="bi bi-check2"></i> Sticker pack x2</li>
+                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+                <li>
+                  <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
+                  Variante)
+                </li>
+                <li class="highlight">
+                  <i class="bi bi-check2"></i> ¡Artículo sorpresa todos los meses!
+                </li>
+                <li><i class="bi bi-check2"></i> Miniposter</li>
+              </ul>
+
+              <br />
+              <!-- Botón CTA -->
+              <a
+                href="./detalle.html"
+                class="btn btn-dark mt-3"
+                >Ver más</a
+              >
+              <br />
             </div>
           </div>
         </div>
       </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 2">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 2</h4>
-              <p class="lead-custom">Otra descripción diferente para esta imagen.</p>
+    </section>
+    <!-- /PLANES DE SUSCRIPCIÓN -->
+
+    <!-- FAQ -->
+    <section class="section-spacing container text-center">
+      <div
+        class="deco-corner-container"
+        style="margin-bottom: -50px">
+        <div class="deco-corner"></div>
+        <div class="deco-corner hflip"></div>
+      </div>
+      <div class="deco-container1 container">
+        <h2 class="h2-custom mb-2">Preguntas frecuentes</h2>
+        <p class="p-custom">¿Tu pregunta no está en la lista? <a href="./index.html" class="accent-txt">Contactanos</a></p>
+        <div class="row justify-content-center text-start">
+          <div class="col-md-8 mt-3">
+            
+            <div class="accordion mt-2" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                    ¿Cuánto cuesta el envío?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                    ¿El envío cubre otras tarifas e impuestos?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                    ¿Qué medios de pago aceptan?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                    ¿A qué países hacen envíos?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                    Necesito cambiar mi dirección de envío.
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                    ¿Cómo funciona la tarjeta MagicTrade?
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                    ¿Qué es una temporada? ¿Cuánto duran?
+                  </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+                    ¿Puedo elegir lo que viene en mi caja?
+                  </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+                    ¿Cuándo pago y cuando recibo la caja del siguiente mes?
+                  </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading10">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
+                    ¿Qué es una temporada? ¿Cuánto duran?
+                  </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading11">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11">
+                    ¿Puedo recibir solo 1 caja?
+                  </button>
+                </h2>
+                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading12">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12">
+                    ¿Qué hago si no recibo mi caja?
+                  </button>
+                </h2>
+                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading13">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13">
+                    ¿Cómo cancelo mi suscripción? ¿Hay reembolsos?
+                  </button>
+                </h2>
+                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Explicación detallada.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
+      <div
+        class="deco-corner-container"
+        style="margin-top: -50px">
+        <div class="deco-corner vflip"></div>
+        <div class="deco-corner vhflip"></div>
+      </div>
+    </section>
+    <!-- /CONTACT FORM -->
 
+    <!-- FOOTER: Pie de página -->
+    <footer class="text-center py-4">
+      <div class="container">
+        <div class="row text-md-start text-sm-center">
+          <div class="col-md-3 flex-fill">
+            <div class="bot-line-sec mb-3">
+                          <span class="navbar-brand"
+              >ColecClub</span>
+            </div>
+            <h5>Contacto</h5>
+            <ul class="list-unstyled">
+              <li><a href="mailto:info@colecclub.com.ar"><i class="bi-envelope-fill me-2 accent-txt"></i>info@colecclub.com.ar</a></li>
+              <li><a href="wa.me/5491112345678"><i class="bi-telephone-fill me-2 accent-txt"></i>+54 9 11 1234-5678</a></li>
+            </ul>
+            <div class="d-flex gap-2">
+              <div><a href="./detalle.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-instagram social-icon"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+              </a></div>
+              <div><a href="./detalle.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook social-icon"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+              </a></div>
+              <div><a href="./detalle.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp social-icon"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                </svg>
+              </a></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase">Acceso rápido</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Recolectá fantasías</a></li>
+              <li><a href="detalle.html">Temporada</a></li>
+              <li><a href="detalle.html">Nosotros</a></li>
+              <li><a href="detalle.html">Preguntas frecuentes</a></li>
+              <li><a href="detalle.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li><a href="detalle.html" class="accent-txt">Iniciar sesión</a></li>
+              <li><a href="detalle.html" class="accent-txt">Registrarse</a></li>
+            </ul>
 
-<!-- GALERÍA E: Cards tipo "story" con imagen y texto -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería de historias</h2>
-  <div class="row g-4">
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
+            <ul class="list-unstyled">
+              <li class="highlight-txt"><a href="detalle.html">Seguimiento de pedidos</a></li>
+              <li class="highlight-txt"><a href="detalle.html">Política de privacidad</a></li>
+              <li class="highlight-txt"><a href="detalle.html">Terminos y condiciones</a></li>
+              <li class="highlight-txt"><a href="detalle.html">Arrepentimiento de compra</a></li>
+            </ul>
+          </div>
         </div>
+        <div 
+        <p class="p-custom">
+          2025 © ColecClub. Todos los derechos reservados.<br />
+          <span class="sec-color"
+            >Rafaela Cigna — Diseño 3 Cátedra Belluccia — Grupo Diego &
+            Agus2</span
+          >
+        </p>
       </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- FOOTER: Pie de página
+    <footer class="text-center py-4">
+      <div class="container">
+        <p class="p-custom">
+          © 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.
+        </p>
       </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-    <!-- repetir para más -->
-  </div>
-</section>
+    </footer>
+    /FOOTER -->
 
-<!-- CTA: Llamado a la acción final -->
-<section class="section-spacing container text-center my-5">
-  <h2 class="h2-custom">¿Listo para empezar?</h2>
-  <p class="p-custom">Texto para motivar acción.</p>
-  <a href="#" class="btn btn-dark mt-4">Comenzá Ahora</a>
-</section>
-<!-- /CTA -->
+    <!-- Bootstrap Bundle JS (incluye Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
 
-<!-- PRICING: Tabla de precios o planes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Planes o Precios</h2>
-  <p class="p-custom">Comparación de planes.</p>
-  <div class="row mt-5">
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /PRICING -->
+    <!-- Script personalizado para cambiar el navbar al hacer scroll -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
 
-<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Planes de Suscripción</h2>
-  <p class="p-custom">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
-  
-  <div class="row mt-5">
-    
-    <!-- Card: Plan Básico -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Básico</h5>
-        <p class="display-6 text-primary">$49.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Básico">
-
-        <!-- Descripción -->
-        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Acceso limitado a contenido</li>
-          <li>✔ Soporte básico</li>
-          <li>✔ Recursos descargables</li>
-          <li>✔ Actualizaciones mensuales</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
-    <!-- Card: Plan Pro (Recomendado) -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100 border border-primary">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Pro <span class="badge bg-primary ms-2">Recomendado</span></h5>
-        <p class="display-6 text-primary">$55.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Pro">
-
-        <!-- Descripción -->
-        <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Todo lo del plan básico</li>
-          <li>✔ Soporte prioritario</li>
-          <li>✔ Acceso a workshops</li>
-          <li>✔ Herramientas premium</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
-    <!-- Card: Plan Full -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Full</h5>
-        <p class="display-6 text-primary">$60.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Full">
-
-        <!-- Descripción -->
-        <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Todo lo del plan Pro</li>
-          <li>✔ Consultorías personalizadas</li>
-          <li>✔ Acceso anticipado a lanzamientos</li>
-          <li>✔ Certificados exclusivos</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- /PLANES DE SUSCRIPCIÓN -->
-
-<!-- FAQS: Preguntas frecuentes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Preguntas Frecuentes</h2>
-  <p class="p-custom">Respuestas a dudas comunes.</p>
-  <div class="accordion mt-5" id="faqAccordion">
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
-        </div>
-      </div>
-    </div>
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /FAQS -->
-
-<!-- CONTACT FORM: Formulario de contacto -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Formulario de Contacto</h2>
-  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Tu nombre">
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Tu email">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
-      </form>
-    </div>
-  </div>
-</section>
-<!-- /CONTACT FORM -->
-
-<!-- FOOTER: Pie de página -->
-<footer class="text-center py-4">
-  <div class="container">
-    <p class="p-custom">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
-  </div>
-</footer>
-<!-- /FOOTER -->
-
-<!-- Bootstrap Bundle JS (incluye Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
-<!-- Script personalizado para cambiar el navbar al hacer scroll -->
-<script>
-window.addEventListener('scroll', function() {
-  const navbar = document.querySelector('.navbar');
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-</script>
-
-<!-- Scripts adicionales -->
-<script src="scripts.js"></script>
-</body>
+    <!-- Scripts adicionales -->
+    <script src="scripts.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.178.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.178.0/examples/jsm/"
+      }
+    }
+    </script>
+  </body>
 </html>
