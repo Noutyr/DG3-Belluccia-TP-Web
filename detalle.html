@@ -397,127 +397,42 @@
       </div>
 
     </div>  
-    <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-    <section class="section-spacing container-fluid text-center">
-      <div class="row align-items-center justify-content-center">
-        <h2 class="h2-custom">¿Queres ver otro grimorio?</h2>
 
-        <div class="row mt-5 mb-5 col-md-10 justify-content-center">
-          <!-- Card: Plan Básico -->
-          <div class="col-lg-4 mb-4 plan-border">
-            <div class="p-4 plan-inner-border plan-1">
-              <!-- Imagen ilustrativa -->
-              <model-viewer
-                disable-zoom
-                disable-pan
-                auto-rotate
-                auto-rotate-delay
-                camera-orbit="0deg 72deg 0.5m"
-                camera-target="auto 2.8cm auto"
-                src="./assets/3d/caja_verde.glb"
-                alt="avatar"
-                shadow-intensity="0">
-              </model-viewer>
-
-              <!-- Título y precio -->
-              <h5 class="plan-name green-book">Archimorio</h5>
-              <p class="text-primary plan-precio">$30.000</p>
-
-              <!-- Descripción -->
-              <p class="p-custom">
-                Para fanáticos que se inician en el mundo de la colección.<br />
-                <strong class="divider-text">Incluye</strong>
-              </p>
-
-              <!-- Lista de beneficios -->
-              <ul class="list-unstyled text-start mx-auto">
-                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
-                <li>
-                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
-                  afiliadas
-                </li>
-                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
-                <li><i class="bi bi-check2"></i> Sticker pack</li>
-                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
-                <li class="disabled">
-                  <i class="bi bi-x"></i> Figura exclusiva (Funko Pop Variante)
-                </li>
-                <li class="disabled">
-                  <i class="bi bi-x"></i> ¡Artículo sorpresa! (Cada 3 meses)
-                </li>
-                <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
-              </ul>
-              <br />
-
-              <!-- Botón CTA -->
-              <a
-                href="./detalle.html"
-                class="btn btn-dark mt-3"
-                >Ver más</a
-              >
-              <br />
+    <section class="section-spacing container">
+      <h2 class="h2-custom text-center">¿Qué dicen los miembros?</h2>
+      
+      <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 1">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 2">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 3">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 4">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 5">
             </div>
           </div>
-          <!-- Card: Plan Full -->
-          <div class="col-lg-4 mb-4 plan-border">
-            <div class="p-4 plan-inner-border plan-3">
-              <!-- Imagen ilustrativa -->
-              <model-viewer
-                disable-zoom
-                disable-pan
-                auto-rotate
-                auto-rotate-delay
-                camera-orbit="0deg 72deg 0.5m"
-                camera-target="auto 2.8cm auto"
-                src="./assets/3d/caja_azul.glb"
-                alt="avatar"
-                shadow-intensity="0">
-              </model-viewer>
-
-              <!-- Título y precio -->
-              <h5 class="plan-name blue-book">Maginomicón</h5>
-              <p class="text-primary plan-precio">$120.000</p>
-
-              <!-- Descripción -->
-              <p class="p-custom">
-                Para los fanáticos que buscan trascender universos.<br />
-                <strong class="divider-text">Incluye</strong>
-              </p>
-
-              <!-- Lista de beneficios -->
-              <ul class="list-unstyled text-start mx-auto">
-                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
-                <li>
-                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
-                  afiliadas
-                </li>
-                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
-                <li><i class="bi bi-check2"></i> Sticker pack x2</li>
-                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
-                <li>
-                  <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
-                  Variante)
-                </li>
-                <li class="highlight">
-                  <i class="bi bi-check2"></i> ¡Artículo sorpresa todos los meses!
-                </li>
-                <li><i class="bi bi-check2"></i> Miniposter</li>
-              </ul>
-
-              <br />
-              <!-- Botón CTA -->
-              <a
-                href="./detalle.html"
-                class="btn btn-dark mt-3"
-                >Ver más</a
-              >
-              <br />
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 6">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 7">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 8">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 9">
+              <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 10">
             </div>
           </div>
         </div>
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </section>
-    <!-- /PLANES DE SUSCRIPCIÓN -->
 
     <!-- FAQ -->
     <section class="section-spacing container text-center">
@@ -725,6 +640,129 @@
       </div>
     </section>
     <!-- /CONTACT FORM -->
+     
+
+    <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+    <section class="section-spacing container-fluid text-center">
+      <div class="row align-items-center justify-content-center">
+        <h2 class="h2-custom">¿Queres ver otro grimorio?</h2>
+
+        <div class="row mt-5 mb-5 col-md-10 justify-content-center">
+          <!-- Card: Plan Básico -->
+          <div class="col-lg-4 mb-4 plan-border">
+            <div class="p-4 plan-inner-border plan-1">
+              <!-- Imagen ilustrativa -->
+              <model-viewer
+                disable-zoom
+                disable-pan
+                auto-rotate
+                auto-rotate-delay
+                camera-orbit="0deg 72deg 0.5m"
+                camera-target="auto 2.8cm auto"
+                src="./assets/3d/caja_verde.glb"
+                alt="avatar"
+                shadow-intensity="0">
+              </model-viewer>
+
+              <!-- Título y precio -->
+              <h5 class="plan-name green-book">Archimorio</h5>
+              <p class="text-primary plan-precio">$30.000</p>
+
+              <!-- Descripción -->
+              <p class="p-custom">
+                Para fanáticos que se inician en el mundo de la colección.<br />
+                <strong class="divider-text">Incluye</strong>
+              </p>
+
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-start mx-auto">
+                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+                <li>
+                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
+                  afiliadas
+                </li>
+                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+                <li><i class="bi bi-check2"></i> Sticker pack</li>
+                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+                <li class="disabled">
+                  <i class="bi bi-x"></i> Figura exclusiva (Funko Pop Variante)
+                </li>
+                <li class="disabled">
+                  <i class="bi bi-x"></i> ¡Artículo sorpresa! (Cada 3 meses)
+                </li>
+                <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
+              </ul>
+              <br />
+
+              <!-- Botón CTA -->
+              <a
+                href="./detalle.html"
+                class="btn btn-dark mt-3"
+                >Ver más</a
+              >
+              <br />
+            </div>
+          </div>
+          <!-- Card: Plan Full -->
+          <div class="col-lg-4 mb-4 plan-border">
+            <div class="p-4 plan-inner-border plan-3">
+              <!-- Imagen ilustrativa -->
+              <model-viewer
+                disable-zoom
+                disable-pan
+                auto-rotate
+                auto-rotate-delay
+                camera-orbit="0deg 72deg 0.5m"
+                camera-target="auto 2.8cm auto"
+                src="./assets/3d/caja_azul.glb"
+                alt="avatar"
+                shadow-intensity="0">
+              </model-viewer>
+
+              <!-- Título y precio -->
+              <h5 class="plan-name blue-book">Maginomicón</h5>
+              <p class="text-primary plan-precio">$120.000</p>
+
+              <!-- Descripción -->
+              <p class="p-custom">
+                Para los fanáticos que buscan trascender universos.<br />
+                <strong class="divider-text">Incluye</strong>
+              </p>
+
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-start mx-auto">
+                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+                <li>
+                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
+                  afiliadas
+                </li>
+                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+                <li><i class="bi bi-check2"></i> Sticker pack x2</li>
+                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+                <li>
+                  <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
+                  Variante)
+                </li>
+                <li class="highlight">
+                  <i class="bi bi-check2"></i> ¡Artículo sorpresa todos los meses!
+                </li>
+                <li><i class="bi bi-check2"></i> Miniposter</li>
+              </ul>
+
+              <br />
+              <!-- Botón CTA -->
+              <a
+                href="./detalle.html"
+                class="btn btn-dark mt-3"
+                >Ver más</a
+              >
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /PLANES DE SUSCRIPCIÓN -->
 
     <!-- FOOTER: Pie de página -->
     <footer class="text-center py-4">
