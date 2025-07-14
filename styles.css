@@ -384,6 +384,22 @@ footer h5 {
 }
 
 /* 10. IMÁGENES */
+
+.new-series-section {
+  background-color: var(--secondary-dark-color);
+  border: 2px solid var(--yellow-note);
+  border-radius: 1rem;
+}
+
+.new-series img {
+  max-height: 300px;
+}
+
+.img-thumbnail {
+  border: none;
+  box-shadow: none;
+}
+
 img.rounded-circle {
   border: 5px solid var(--light-color);
 }
@@ -532,6 +548,10 @@ img.rounded-circle {
 /** ============================== */
 /* ! DECOS */
 /** ============================== */
+
+.deco-side-arrow {
+  height: 200px;
+}
 
 .deco-botarrow {
   background-image: url(./assets/svg/deco-botarrow.svg);
