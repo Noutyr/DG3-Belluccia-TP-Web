@@ -13,6 +13,7 @@
   --dark-color50: rgba(13, 25, 56, 0.5);
   --primary-color50: rgba(42, 255, 99, 0.5);
   --secondary-color50: rgba(123, 143, 172, 0.5);
+  --secondary-dark-color75: rgba(59, 69, 94, 0.75);
 
   /* Font Families */
   --font-family-header: "Playfair Display", serif;
@@ -41,7 +42,7 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
+a:hover:not(.nav-link, .btn) {
   font-weight: 600;
   color: var(--primary-color);
 }
@@ -297,6 +298,11 @@ section h2 {
 }*/
 
 /* 6. CARDS */
+
+.card-img-y250px {
+  max-height: 250px;
+}
+
 .card {
   background-color: transparent;
   border: none;
@@ -386,7 +392,7 @@ footer h5 {
 /* 10. IMÁGENES */
 
 .new-series-section {
-  background-color: var(--secondary-dark-color);
+  background-color: var(--secondary-dark-color75);
   border: 2px solid var(--yellow-note);
   border-radius: 1rem;
 }
@@ -402,6 +408,12 @@ footer h5 {
 
 img.rounded-circle {
   border: 5px solid var(--light-color);
+}
+
+/* 10a.FONDOS */
+
+.bg-secondary-custom {
+  background-color: var(--secondary-dark-color);
 }
 
 .bg-hero {
@@ -1348,7 +1360,7 @@ model-viewer.pagdet {
 
 .h5-custom {
   font-family: var(--font-family-base);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--light-color);
 }
 
@@ -1399,6 +1411,9 @@ model-viewer.pagdet {
 
 .text-muted-custom {
   color: #6c757d;
+}
+.text-muted-custom {
+  color: var(--secondary-color) !important;
 }
 
 .text-primary {
