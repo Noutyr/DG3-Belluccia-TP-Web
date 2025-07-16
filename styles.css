@@ -1312,6 +1312,7 @@ model-viewer {
   margin-top: 1em;
   margin-bottom: -0.25rem !important;
   z-index: 0;
+  display: none;
 }
 
 model-viewer.pagdet {
