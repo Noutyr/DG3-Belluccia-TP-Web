@@ -77,7 +77,7 @@ a {
   text-decoration: none;
 }
 
-/*------ Skin Flavor ------*/
+/*!------ Skin Flavor ------*/
 .flavor {
   font-family: var(--font-alt);
 
@@ -124,7 +124,7 @@ a {
   width: 28px;
 }
 
-/*--------- Containers General CFG ---------*/
+/*!--------- Containers General CFG ---------*/
 
 .container {
   position: relative;
@@ -137,7 +137,7 @@ a {
   /*clip-path: path("M 0,0 L 220,0 L 250,30 L 470,30 L 500,60 L 500,320 L 280,320 L 250,290 L 30,290 L 0,260 L 0,0 Z");*/
 }
 
-/*------ Containers Details ------*/
+/*!------ Containers Details ------*/
 
 .coninfo {
   background-image: url("../miniweb/starsbgbig_inv.gif");
@@ -150,7 +150,7 @@ a {
   padding: var(--pad-bg) 0 var(--pad-xs);
   clip-path: path("M 0,0 L 220,0 L 251,30 L 251,291 L 30,291 L 0,260 L 0,0 Z");
 
-  /*Content*/
+  /*?Content*/
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -220,7 +220,7 @@ a {
   z-index: -1;
 }
 
-/*--- Link Buttons ---*/
+/*!--- Link Buttons ---*/
 .btn {
   background-color: var(--btn-clr);
   border: 3px var(--btn-clr) solid;
@@ -241,7 +241,7 @@ a {
   border: 3px var(--btn-clr-h) solid;
 }
 
-/*--- Audio Buttons ---*/
+/*!--- Audio Buttons ---*/
 .btn-audio {
   color: var(--btn-txt);
   border: var(--btn-clr) 3px solid;
@@ -261,13 +261,38 @@ a {
   background-color: var(--btn-clr-h);
 }
 
-.btn-audio:hover > svg {
+.btn-audio:hover svg {
   height: 20px;
   width: 20px;
 }
-.btn-audio > svg {
+.btn-audio svg {
   height: 24px;
   width: 24px;
+}
+
+.btn-audio a svg {
+  display: inherit;
+}
+
+.btn-audio:hover::after {
+  content: "♪ Super Mario Land 2: 6 Golden Coins - Game Over";
+  min-width: 200px;
+  max-width: 250px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: var(--bg-card);
+  padding: 0.5rem 1rem;
+  color: var(--txt-head-clr);
+  clip-path: polygon(
+    0 0,
+    calc(100% - 1rem) 0,
+    100% 1rem,
+    100% 100%,
+    1rem 100%,
+    0 calc(100% - 1rem),
+    0 0
+  );
 }
 
 .info-btn {
@@ -305,7 +330,7 @@ a {
   left: calc(1em + 24px);
 }
 
-/*--------- Audio Play Toggle ---------*/
+/*!--------- Audio Play Toggle ---------*/
 
 .toggleAudioStop svg:first-child {
   display: none;
@@ -322,7 +347,7 @@ a {
   display: none;
 }
 
-/*--------- Catblob ---------*/
+/*!--------- Catblob ---------*/
 
 .catblob {
   position: relative;
@@ -361,7 +386,7 @@ a {
   z-index: -1;
 }
 
-/*--------- Text CFG ---------*/
+/*!--------- Text CFG ---------*/
 
 p {
   color: var(--txt-clr);
@@ -372,4 +397,11 @@ h3 {
   margin: var(--pad-xs) 0;
   color: var(--txt-head-clr);
   font-family: var(--font-h);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: inherit;
+  padding: inherit;
 }
