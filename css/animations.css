@@ -2,6 +2,10 @@
 * ANIMACIONES 
 ======================= */
 
+.brightPulse {
+  animation: brightPulse 3s infinite ease-in-out;
+}
+
 .float-y {
   animation: float-y 2s infinite alternate ease-in-out;
 }
@@ -48,5 +52,16 @@
 
   to {
     background-position: center 0, center 0, 120vh 90%;
+  }
+}
+
+@keyframes brightPulse {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(1.7);
   }
 }
