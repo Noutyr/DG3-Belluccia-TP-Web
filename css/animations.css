@@ -3,7 +3,7 @@
 ======================= */
 
 .brightPulse {
-  animation: brightPulse 3s infinite ease-in-out;
+  animation: brightPulse 3s infinite ease-in;
 }
 
 .float-y {
