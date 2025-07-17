@@ -1611,6 +1611,14 @@ model-viewer.pagdet {
   z-index: -2;
 }
 
+.recomendado.alt {
+  position: absolute;
+  top: 24px;
+  width: 100%;
+  left: 24px;
+  z-index: 2;
+}
+
 .accent-txt {
   color: var(--primary-color) !important;
 }
