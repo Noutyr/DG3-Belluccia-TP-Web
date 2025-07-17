@@ -38,9 +38,7 @@
     <link
       rel="stylesheet"
       href="styles.css" />
-
-    <link rel="stylesheet" href="css/animate.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Script 3D Model -->
     <script
@@ -121,11 +119,11 @@
 
     <!-- HERO: Sección de portada con llamado a la acción -->
     <section
-      class="section-spacing container-fluid"
+      class="section-spacing container"
       style="min-height: 100vh; padding-top: 100px">
-      <div class="row align-items-center justify-content-center" style="margin: 0 10%;">
+      <div class="row align-items-center justify-content-center">
         <!-- Texto principal -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
           <h1 class="h1-custom">Juntá los ecos de otros mundos</h1>
           <p class="p-custom">
             El mundo se ha fragmentado y las historias están perdidas. Unite a
@@ -141,7 +139,7 @@
           </div>
         </div>
         <!-- Imagen destacada -->
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1500">
           <div class="herobox-crop">
             <img
               src="./assets/img/hero_box.png"
@@ -174,70 +172,73 @@
     </section>
     <!-- /HERO -->
 
-    <!-- SECCIÓN D: Qué es Colecclub -->
-    <section
-      class="section-spacing container"
-      style="position: relative">
-      <div class="row align-items-center">
-        <!-- Imagen a la izquierda -->
-        <div class="col-md-6 text-center mb-4 mb-md-0">
-          <img
-            src="./assets/img/about_chars.png"
-            class="img-fluid img-rounded"
-            alt="Imagen" />
-        </div>
-        <!-- Texto a la derecha -->
-        <div class="col-md-6 text-center text-md-start">
-          <h3
-            class="display-6 h2-custom text-uppercase">
-            ¿Qué es ColecClub?
-          </h3>
-          <br />
-          <p class="lead-custom">
-            <strong>ColecClub</strong> es una suscripción mensual que lleva los
-            artículos de la cultura pop a tu puerta. Todos los meses te llevás
-            una cajita con una revistas, comics, figuritas, stickers y más
-            beneficios:
-          </p>
-          <br />
-
-
-          <!--? Lista de beneficios -->
-          <div class="row d-flex text-center justify-content-center">
-            <div class="col-sm-6 col-md-4">
-              <div>
-                <svg width="48" height="59" viewBox="0 0 48 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M38.5832 0.341064C40.9038 0.341064 43.1294 1.26294 44.7704 2.90388C46.4113 4.54482 47.3332 6.77042 47.3332 9.09106V49.9244C47.3332 52.245 46.4113 54.4706 44.7704 56.1116C43.1294 57.7525 40.9038 58.6744 38.5832 58.6744H9.4165C7.09586 58.6744 4.87026 57.7525 3.22932 56.1116C1.58838 54.4706 0.666504 52.245 0.666504 49.9244V9.09106C0.666504 6.77042 1.58838 4.54482 3.22932 2.90388C4.87026 1.26294 7.09586 0.341064 9.4165 0.341064H38.5832ZM38.6123 47.0077H38.5832C37.8398 47.0086 37.1247 47.2932 36.5842 47.8035C36.0436 48.3139 35.7183 49.0113 35.6748 49.7535C35.6312 50.4956 35.8726 51.2263 36.3498 51.7964C36.8269 52.3665 37.5037 52.7328 38.2419 52.8206L38.6123 52.8411C39.3859 52.8411 40.1278 52.5338 40.6747 51.9868C41.2217 51.4398 41.529 50.6979 41.529 49.9244C41.529 49.1509 41.2217 48.409 40.6747 47.862C40.1278 47.315 39.3859 47.0077 38.6123 47.0077ZM24.0873 19.2994L23.7519 19.314C22.6319 19.4306 21.6403 20.1102 21.1328 21.1311L19.6453 24.1265L16.3261 24.6106C15.0923 24.7827 14.0511 25.6519 13.6603 26.8506L13.564 27.2152C13.4529 27.7586 13.4808 28.3212 13.645 28.8509C13.8091 29.3806 14.1043 29.8603 14.5032 30.2456L16.8948 32.5702L16.329 35.8573C16.1248 37.1173 16.6411 38.3569 17.6532 39.089L17.9653 39.2873C18.4435 39.5573 18.9816 39.7036 19.5307 39.7127C20.0798 39.7219 20.6225 39.5937 21.1094 39.3398L24.0903 37.7765L27.0623 39.3369C28.1619 39.9202 29.5123 39.8269 30.5332 39.0861L30.8248 38.8527C31.6444 38.0973 32.0382 36.9715 31.8457 35.8544L31.2798 32.5702L33.6803 30.2398C34.5844 29.359 34.9053 28.0465 34.5173 26.8536L34.3948 26.5327C34.1678 26.023 33.8151 25.5793 33.3698 25.2431C32.9244 24.9069 32.401 24.6893 31.8486 24.6106L28.5294 24.1265L27.0478 21.134C26.7755 20.5821 26.3541 20.1176 25.8315 19.7928C25.3088 19.4681 24.7056 19.2961 24.0903 19.2965M9.44567 6.1744H9.4165C8.67311 6.17522 7.95808 6.45988 7.41751 6.9702C6.87695 7.48053 6.55165 8.17801 6.50809 8.92013C6.46452 9.66225 6.70597 10.393 7.18311 10.9631C7.66025 11.5331 8.33706 11.8995 9.07525 11.9873L9.44567 12.0077C10.2192 12.0077 10.9611 11.7004 11.5081 11.1535C12.055 10.6065 12.3623 9.86461 12.3623 9.09106C12.3623 8.31752 12.055 7.57565 11.5081 7.02867C10.9611 6.48169 10.2192 6.1744 9.44567 6.1744Z" fill="white"/>
-                </svg>
-              </div>
-              <p class="top-line mt-4">MagicTrade: Intercambio en tiendas y la comunidad</p>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div>
-                <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M44.5835 4.24957C49.0174 6.8095 52.6994 10.4915 55.2593 14.9254C57.8192 19.3593 59.1669 24.389 59.1668 29.5088C59.1668 34.6287 57.8191 39.6583 55.2591 44.0922C52.6991 48.5261 49.0171 52.208 44.5832 54.7679C40.1492 57.3278 35.1195 58.6754 29.9997 58.6753C24.8798 58.6752 19.8502 57.3275 15.4163 54.7674C10.9825 52.2074 7.30059 48.5254 4.74076 44.0914C2.18094 39.6574 0.833366 34.6278 0.833496 29.5079L0.84808 28.5629C1.01142 23.5258 2.47718 18.617 5.10244 14.315C7.72771 10.013 11.4229 6.46464 15.8278 4.0159C20.2326 1.56715 25.1968 0.301563 30.2364 0.342516C35.276 0.383469 40.219 1.72957 44.5835 4.24957ZM37.2918 32.4246C36.1315 32.4246 35.0187 32.8855 34.1982 33.706C33.3778 34.5264 32.9168 35.6392 32.9168 36.7996C32.9168 37.9599 33.3778 39.0727 34.1982 39.8932C35.0187 40.7136 36.1315 41.1746 37.2918 41.1746C38.4521 41.1746 39.5649 40.7136 40.3854 39.8932C41.2059 39.0727 41.6668 37.9599 41.6668 36.7996C41.6668 35.6392 41.2059 34.5264 40.3854 33.706C39.5649 32.8855 38.4521 32.4246 37.2918 32.4246ZM40.8122 18.6958C40.2653 18.149 39.5236 17.8419 38.7502 17.8419C37.9768 17.8419 37.235 18.149 36.6881 18.6958L19.1881 36.1958C18.6568 36.7459 18.3628 37.4827 18.3694 38.2474C18.3761 39.0121 18.6828 39.7437 19.2236 40.2845C19.7644 40.8252 20.4959 41.132 21.2607 41.1386C22.0254 41.1453 22.7622 40.8513 23.3122 40.32L40.8122 22.82C41.359 22.273 41.6662 21.5313 41.6662 20.7579C41.6662 19.9845 41.359 19.2428 40.8122 18.6958ZM22.7085 17.8412C21.5482 17.8412 20.4354 18.3022 19.6149 19.1226C18.7944 19.9431 18.3335 21.0559 18.3335 22.2162C18.3335 23.3766 18.7944 24.4894 19.6149 25.3098C20.4354 26.1303 21.5482 26.5912 22.7085 26.5912C23.8688 26.5912 24.9816 26.1303 25.8021 25.3098C26.6226 24.4894 27.0835 23.3766 27.0835 22.2162C27.0835 21.0559 26.6226 19.9431 25.8021 19.1226C24.9816 18.3022 23.8688 17.8412 22.7085 17.8412Z" fill="white"/>
-                </svg>
-
-              </div>
-              <p class="top-line mt-4">10% de descuento en tiendas afiliadas</p>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div>
-                <svg width="66" height="62" viewBox="0 0 66 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.0423 18.9162L3.43392 21.6141L3.10434 21.6812C2.60541 21.8136 2.15057 22.0761 1.78627 22.4418C1.42197 22.8076 1.16127 23.2634 1.03077 23.7629C0.900274 24.2623 0.904668 24.7874 1.0435 25.2846C1.18234 25.7818 1.45064 26.2333 1.821 26.5928L15.3018 39.7149L12.1227 58.2503L12.0848 58.5712C12.0542 59.0872 12.1614 59.6021 12.3952 60.0631C12.6291 60.5241 12.9813 60.9146 13.4157 61.1947C13.8502 61.4749 14.3513 61.6345 14.8677 61.6573C15.3841 61.6801 15.8973 61.5653 16.3548 61.3245L32.9973 52.5745L49.6018 61.3245L49.8935 61.4587C50.3749 61.6483 50.8981 61.7064 51.4095 61.6271C51.9208 61.5478 52.4018 61.3339 52.8032 61.0074C53.2045 60.6808 53.5118 60.2534 53.6934 59.7689C53.8751 59.2844 53.9246 58.7603 53.8368 58.2503L50.6548 39.7149L64.1414 26.5899L64.3689 26.342C64.6939 25.9417 64.907 25.4625 64.9864 24.9531C65.0659 24.4436 65.0089 23.9223 64.8213 23.442C64.6336 22.9618 64.322 22.5399 63.9183 22.2193C63.5145 21.8987 63.0329 21.6909 62.5227 21.617L43.9143 18.9162L35.596 2.05783C35.3553 1.56939 34.9827 1.15808 34.5203 0.870469C34.0579 0.582855 33.5243 0.43042 32.9798 0.43042C32.4352 0.43042 31.9016 0.582855 31.4392 0.870469C30.9768 1.15808 30.6042 1.56939 30.3635 2.05783L22.0423 18.9162Z" fill="white"/>
-                </svg>
-              </div>
-              <p class="top-line mt-4">Artículo sorpresa cada 3 meses</p>
-            </div>
+    <div class="bg-contain" style="background-image: url(/assets/bg/bg_nube-izq.png);" data-aos="fade-up" data-aos-duration="500">
+      <!-- Qué es Colecclub -->
+      <section
+        class="section-spacing container"
+        style="position: relative;">
+        <div class="row align-items-center">
+          <!-- Imagen a la izquierda -->
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+            <img
+              src="./assets/img/about_chars.png"
+              class="img-fluid img-rounded"
+              alt="Imagen" />
           </div>
-          <!--?/ Lista de beneficios-->
-          <br />
+          <!-- Texto a la derecha -->
+          <div class="col-md-6 text-center text-md-start">
+            <h3
+              class="display-6 h2-custom text-uppercase ">
+              ¿Qué es ColecClub?
+            </h3>
+            <br />
+            <p class="lead-custom">
+              <strong>ColecClub</strong> es una suscripción mensual que lleva los
+              artículos de la cultura pop a tu puerta. Todos los meses te llevás
+              una cajita con una revistas, comics, figuritas, stickers y más
+              beneficios:
+            </p>
+            <br />
+
+
+            <!--? Lista de beneficios -->
+            <div class="row d-flex text-center justify-content-center">
+              <div class="col-sm-6 col-md-4">
+                <div>
+                  <svg width="48" height="59" viewBox="0 0 48 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M38.5832 0.341064C40.9038 0.341064 43.1294 1.26294 44.7704 2.90388C46.4113 4.54482 47.3332 6.77042 47.3332 9.09106V49.9244C47.3332 52.245 46.4113 54.4706 44.7704 56.1116C43.1294 57.7525 40.9038 58.6744 38.5832 58.6744H9.4165C7.09586 58.6744 4.87026 57.7525 3.22932 56.1116C1.58838 54.4706 0.666504 52.245 0.666504 49.9244V9.09106C0.666504 6.77042 1.58838 4.54482 3.22932 2.90388C4.87026 1.26294 7.09586 0.341064 9.4165 0.341064H38.5832ZM38.6123 47.0077H38.5832C37.8398 47.0086 37.1247 47.2932 36.5842 47.8035C36.0436 48.3139 35.7183 49.0113 35.6748 49.7535C35.6312 50.4956 35.8726 51.2263 36.3498 51.7964C36.8269 52.3665 37.5037 52.7328 38.2419 52.8206L38.6123 52.8411C39.3859 52.8411 40.1278 52.5338 40.6747 51.9868C41.2217 51.4398 41.529 50.6979 41.529 49.9244C41.529 49.1509 41.2217 48.409 40.6747 47.862C40.1278 47.315 39.3859 47.0077 38.6123 47.0077ZM24.0873 19.2994L23.7519 19.314C22.6319 19.4306 21.6403 20.1102 21.1328 21.1311L19.6453 24.1265L16.3261 24.6106C15.0923 24.7827 14.0511 25.6519 13.6603 26.8506L13.564 27.2152C13.4529 27.7586 13.4808 28.3212 13.645 28.8509C13.8091 29.3806 14.1043 29.8603 14.5032 30.2456L16.8948 32.5702L16.329 35.8573C16.1248 37.1173 16.6411 38.3569 17.6532 39.089L17.9653 39.2873C18.4435 39.5573 18.9816 39.7036 19.5307 39.7127C20.0798 39.7219 20.6225 39.5937 21.1094 39.3398L24.0903 37.7765L27.0623 39.3369C28.1619 39.9202 29.5123 39.8269 30.5332 39.0861L30.8248 38.8527C31.6444 38.0973 32.0382 36.9715 31.8457 35.8544L31.2798 32.5702L33.6803 30.2398C34.5844 29.359 34.9053 28.0465 34.5173 26.8536L34.3948 26.5327C34.1678 26.023 33.8151 25.5793 33.3698 25.2431C32.9244 24.9069 32.401 24.6893 31.8486 24.6106L28.5294 24.1265L27.0478 21.134C26.7755 20.5821 26.3541 20.1176 25.8315 19.7928C25.3088 19.4681 24.7056 19.2961 24.0903 19.2965M9.44567 6.1744H9.4165C8.67311 6.17522 7.95808 6.45988 7.41751 6.9702C6.87695 7.48053 6.55165 8.17801 6.50809 8.92013C6.46452 9.66225 6.70597 10.393 7.18311 10.9631C7.66025 11.5331 8.33706 11.8995 9.07525 11.9873L9.44567 12.0077C10.2192 12.0077 10.9611 11.7004 11.5081 11.1535C12.055 10.6065 12.3623 9.86461 12.3623 9.09106C12.3623 8.31752 12.055 7.57565 11.5081 7.02867C10.9611 6.48169 10.2192 6.1744 9.44567 6.1744Z" fill="white"/>
+                  </svg>
+                </div>
+                <p class="top-line mt-4">MagicTrade: Intercambio en tiendas y la comunidad</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div>
+                  <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M44.5835 4.24957C49.0174 6.8095 52.6994 10.4915 55.2593 14.9254C57.8192 19.3593 59.1669 24.389 59.1668 29.5088C59.1668 34.6287 57.8191 39.6583 55.2591 44.0922C52.6991 48.5261 49.0171 52.208 44.5832 54.7679C40.1492 57.3278 35.1195 58.6754 29.9997 58.6753C24.8798 58.6752 19.8502 57.3275 15.4163 54.7674C10.9825 52.2074 7.30059 48.5254 4.74076 44.0914C2.18094 39.6574 0.833366 34.6278 0.833496 29.5079L0.84808 28.5629C1.01142 23.5258 2.47718 18.617 5.10244 14.315C7.72771 10.013 11.4229 6.46464 15.8278 4.0159C20.2326 1.56715 25.1968 0.301563 30.2364 0.342516C35.276 0.383469 40.219 1.72957 44.5835 4.24957ZM37.2918 32.4246C36.1315 32.4246 35.0187 32.8855 34.1982 33.706C33.3778 34.5264 32.9168 35.6392 32.9168 36.7996C32.9168 37.9599 33.3778 39.0727 34.1982 39.8932C35.0187 40.7136 36.1315 41.1746 37.2918 41.1746C38.4521 41.1746 39.5649 40.7136 40.3854 39.8932C41.2059 39.0727 41.6668 37.9599 41.6668 36.7996C41.6668 35.6392 41.2059 34.5264 40.3854 33.706C39.5649 32.8855 38.4521 32.4246 37.2918 32.4246ZM40.8122 18.6958C40.2653 18.149 39.5236 17.8419 38.7502 17.8419C37.9768 17.8419 37.235 18.149 36.6881 18.6958L19.1881 36.1958C18.6568 36.7459 18.3628 37.4827 18.3694 38.2474C18.3761 39.0121 18.6828 39.7437 19.2236 40.2845C19.7644 40.8252 20.4959 41.132 21.2607 41.1386C22.0254 41.1453 22.7622 40.8513 23.3122 40.32L40.8122 22.82C41.359 22.273 41.6662 21.5313 41.6662 20.7579C41.6662 19.9845 41.359 19.2428 40.8122 18.6958ZM22.7085 17.8412C21.5482 17.8412 20.4354 18.3022 19.6149 19.1226C18.7944 19.9431 18.3335 21.0559 18.3335 22.2162C18.3335 23.3766 18.7944 24.4894 19.6149 25.3098C20.4354 26.1303 21.5482 26.5912 22.7085 26.5912C23.8688 26.5912 24.9816 26.1303 25.8021 25.3098C26.6226 24.4894 27.0835 23.3766 27.0835 22.2162C27.0835 21.0559 26.6226 19.9431 25.8021 19.1226C24.9816 18.3022 23.8688 17.8412 22.7085 17.8412Z" fill="white"/>
+                  </svg>
+
+                </div>
+                <p class="top-line mt-4">10% de descuento en tiendas afiliadas</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div>
+                  <svg width="66" height="62" viewBox="0 0 66 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.0423 18.9162L3.43392 21.6141L3.10434 21.6812C2.60541 21.8136 2.15057 22.0761 1.78627 22.4418C1.42197 22.8076 1.16127 23.2634 1.03077 23.7629C0.900274 24.2623 0.904668 24.7874 1.0435 25.2846C1.18234 25.7818 1.45064 26.2333 1.821 26.5928L15.3018 39.7149L12.1227 58.2503L12.0848 58.5712C12.0542 59.0872 12.1614 59.6021 12.3952 60.0631C12.6291 60.5241 12.9813 60.9146 13.4157 61.1947C13.8502 61.4749 14.3513 61.6345 14.8677 61.6573C15.3841 61.6801 15.8973 61.5653 16.3548 61.3245L32.9973 52.5745L49.6018 61.3245L49.8935 61.4587C50.3749 61.6483 50.8981 61.7064 51.4095 61.6271C51.9208 61.5478 52.4018 61.3339 52.8032 61.0074C53.2045 60.6808 53.5118 60.2534 53.6934 59.7689C53.8751 59.2844 53.9246 58.7603 53.8368 58.2503L50.6548 39.7149L64.1414 26.5899L64.3689 26.342C64.6939 25.9417 64.907 25.4625 64.9864 24.9531C65.0659 24.4436 65.0089 23.9223 64.8213 23.442C64.6336 22.9618 64.322 22.5399 63.9183 22.2193C63.5145 21.8987 63.0329 21.6909 62.5227 21.617L43.9143 18.9162L35.596 2.05783C35.3553 1.56939 34.9827 1.15808 34.5203 0.870469C34.0579 0.582855 33.5243 0.43042 32.9798 0.43042C32.4352 0.43042 31.9016 0.582855 31.4392 0.870469C30.9768 1.15808 30.6042 1.56939 30.3635 2.05783L22.0423 18.9162Z" fill="white"/>
+                  </svg>
+                </div>
+                <p class="top-line mt-4">Artículo sorpresa cada 3 meses</p>
+              </div>
+            </div>
+            <!--?/ Lista de beneficios-->
+            <br />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!--/ Qué es Colecclub -->
+    </div>
     
-    <!-- SERVICES: Como funciona -->
-    <section class="section-spacing container text-center bg-contain" style="background-image: url(/assets/bg/bg_nube-izq.png);">
+    <!-- Como funciona -->
+    <section class="section-spacing container text-center bg-contain" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
       <h2 class="h2-custom mb-0">¿Cómo funciona?</h2>
       <div class="row">
         <!-- Cada columna es una tarjeta de servicio -->
@@ -288,299 +289,496 @@
         <!-- ... repetir estructura para más servicios ... -->
       </div>
     </section>
-    <!-- /SERVICES -->
+    <!-- /Como funciona -->
 
-    <div class="bg-biblio">
-      <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-      <section class="section-spacing container-fluid text-center">
-        <div class="row align-items-center justify-content-center">
-          <h2 class="h2-custom">Comenzá tu grimorio</h2>
-          <p class="p-custom mb-2">
-            ¡Unite a nuestra comunidad de magos y recibí una caja llena de artículos
-            de tus series favoritas!<br />
-            Cada plan incluye diferentes beneficios pensados para vos.
-          </p>
+    <!-- Magic Trade -->
+    <div class="bg-bookblue centered">
+      <section class="container text-center" data-aos="fade-up" data-aos-duration="500">
+        <h2 class="h2-custom mb-2">MagicTrade</h2>
+        <p class="text-uppercase highlight-txt">Intercambio para magos</p>
+        <p class="p-custom">¿El artículo que te tocó está repetido o no es de tu gusto? <br>¡Que no cunda el pánico! Intercambiá en tiendas asociadas y con la comunidad usando tu tarjeta MagicTrade.</p>
 
-          <!-- Selector de duración
-          <div class="container-plantime">
-            <div class="plan-time-buttons">
-              <a
-                href="#"
-                class="btn-plantime fit-ver px-3"
-                >1 mes</a
-              >
-              <a
-                href="#"
-                class="btn-plantime fit-ver px-3"
-                >3 meses <span class="btn-plantime-discount">Ahorra 10%</span></a
-              >
-              <a
-                href="#"
-                class="btn-plantime fit-ver px-3"
-                >1 año <span class="btn-plantime-discount">Ahorra 25%</span></a
-              >
+        <div class="row mt-5 justify-content-center gap-md-4">
+
+          <!-- Caja 1 -->
+          <div class="col-md-5 bg-dark75 text-white d-flex align-items-center mb-4 p-4 rounded">
+            <img src="./assets/svg/mt_magos.svg" alt="Magos" style="height: 125px; width: 125px; flex-shrink: 0;" class="me-4">
+            <div class="text-center">
+              <strong class="p-custom">Acercate a la comunidad</strong>
+              <p class="p-custom text-white mb-0">Intercambiá tus artículos con otros miembros del club.</p>
             </div>
-          </div> -->
+          </div>
 
-          <div class="row mt-5 mb-5 col-md-10 justify-content-center">
-            <!-- Card: Plan Básico -->
-            <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border">
-              <div class="p-4 plan-inner-border plan-1">
-                <!-- Imagen ilustrativa -->
-                <model-viewer
-                  disable-zoom
-                  disable-pan
-                  auto-rotate
-                  auto-rotate-delay
-                  camera-orbit="0deg 72deg 0.5m"
-                  camera-target="auto 2.8cm auto"
-                  src="./assets/3d/caja_verde.glb"
-                  alt="avatar"
-                  shadow-intensity="0">
-                </model-viewer>
-
-                <!-- Título y precio -->
-                <h5 class="plan-name green-book">Archimorio</h5>
-                <p class="text-primary plan-precio">$30.000</p>
-
-                <!-- Descripción -->
-                <p class="p-custom">
-                  Para fanáticos que se inician en el mundo de la colección.<br />
-                  <strong class="divider-text">Incluye</strong>
-                </p>
-
-                <!-- Lista de beneficios -->
-                <ul class="list-unstyled text-start mx-auto">
-                  <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
-                  <li>
-                    <i class="bi bi-check2"></i> 10% de descuento en tiendas
-                    afiliadas
-                  </li>
-                  <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
-                  <li><i class="bi bi-check2"></i> Sticker pack</li>
-                  <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
-                  <li class="disabled">
-                    <i class="bi bi-x"></i> Figura exclusiva (Funko Pop Variante)
-                  </li>
-                  <li class="disabled">
-                    <i class="bi bi-x"></i> ¡Artículo sorpresa! (Cada 3 meses)
-                  </li>
-                  <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
-                </ul>
-                <br />
-
-                <!-- Botón CTA -->
-                <a
-                  href="./detalle.html"
-                  class="btn btn-dark mt-3"
-                  >Ver más</a
-                >
-                <br />
-              </div>
+          <!-- Caja 2 -->
+          <div class="col-md-5 bg-dark75 d-flex align-items-center mb-4 p-4 rounded">
+            <img src="./assets/svg/mt_tienda.svg" alt="Tienda" style="height: 125px; width: 125px; flex-shrink: 0;" class="me-4">
+            <div class="text-center">
+              <strong class="p-custom mb-1">Acercate a un local adherido</strong>
+              <p class="p-custom mb-2">Pedí un cambio de artículo por otro del mismo valor o equivalente.</p>
+              <a href="#" class="accent-txt">Ver locales</a>
             </div>
-            <!-- Card: Plan Pro (Recomendado) -->
-            <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border-highlight">
-              <div class="p-4 plan-inner-border-highlight plan-2">
-                <div class="recomendado">Más elegido</div>
-                <!-- Imagen ilustrativa -->
-                <model-viewer
-                  disable-zoom
-                  disable-pan
-                  auto-rotate
-                  auto-rotate-delay
-                  camera-orbit="0deg 72deg 0.5m"
-                  camera-target="auto 2.8cm auto"
-                  src="./assets/3d/caja_rojo.glb"
-                  alt="avatar"
-                  shadow-intensity="0">
-                </model-viewer>
+          </div>
 
-                <!-- Título y precio -->
-                <h5 class="plan-name red-book">Codex Frikus</h5>
-                <p class="text-primary plan-precio">$67.500</p>
+        </div>
+      </section> 
+    </div>
+    <!-- /Magic Trade -->
 
-                <!-- Descripción -->
-                <p class="p-custom">
-                  Para fanáticos que buscan una experiencia completa.<br />
-                  <strong class="divider-text">Incluye</strong>
-                </p>
 
-                <!-- Lista de beneficios -->
-                <ul class="list-unstyled text-start mx-auto">
-                  <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
-                  <li>
-                    <i class="bi bi-check2"></i> 10% de descuento en tiendas
-                    afiliadas
-                  </li>
-                  <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
-                  <li><i class="bi bi-check2"></i> Sticker pack</li>
-                  <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
-                  <li>
-                    <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
-                    Variante)
-                  </li>
-                  <li class="highlight">
-                    <i class="bi bi-check2"></i> ¡Artículo sorpresa! (Cada 3 meses)
-                  </li>
-                  <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
-                </ul>
+    <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+    <section class="section-spacing container-fluid text-center" data-aos="fade-up" data-aos-duration="500">
+      <div class="row align-items-center justify-content-center">
+        <h2 class="h2-custom">Comenzá tu grimorio</h2>
+        <p class="p-custom mb-2">
+          ¡Unite a nuestra comunidad de magos y recibí una caja llena de artículos
+          de tus series favoritas!<br />
+          Cada plan incluye diferentes beneficios pensados para vos.
+        </p>
 
-                <br />
-                <!-- Botón CTA -->
-                <a
-                  href="./detalle.html"
-                  class="btn btn-dark mt-3"
-                  >Ver más</a
-                >
-                <br />
-              </div>
+        <!-- Selector de duración
+        <div class="container-plantime">
+          <div class="plan-time-buttons">
+            <a
+              href="#"
+              class="btn-plantime fit-ver px-3"
+              >1 mes</a
+            >
+            <a
+              href="#"
+              class="btn-plantime fit-ver px-3"
+              >3 meses <span class="btn-plantime-discount">Ahorra 10%</span></a
+            >
+            <a
+              href="#"
+              class="btn-plantime fit-ver px-3"
+              >1 año <span class="btn-plantime-discount">Ahorra 25%</span></a
+            >
+          </div>
+        </div> -->
+
+        <div class="row mt-5 mb-5 col-md-10 justify-content-center">
+          <!-- Card: Plan Básico -->
+          <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border" data-aos="fade-up">
+            <div class="p-4 plan-inner-border plan-1">
+              <!-- Imagen ilustrativa -->
+              <model-viewer
+                disable-zoom
+                disable-pan
+                auto-rotate
+                auto-rotate-delay
+                camera-orbit="0deg 72deg 0.5m"
+                camera-target="auto 2.8cm auto"
+                src="./assets/3d/caja_verde.glb"
+                alt="avatar"
+                shadow-intensity="0">
+              </model-viewer>
+
+              <!-- Título y precio -->
+              <h5 class="plan-name green-book">Archimorio</h5>
+              <p class="text-primary plan-precio">$30.000</p>
+
+              <!-- Descripción -->
+              <p class="p-custom">
+                Para fanáticos que se inician en el mundo de la colección.<br />
+                <strong class="divider-text">Incluye</strong>
+              </p>
+
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-start mx-auto">
+                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+                <li>
+                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
+                  afiliadas
+                </li>
+                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+                <li><i class="bi bi-check2"></i> Sticker pack</li>
+                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+                <li class="disabled">
+                  <i class="bi bi-x"></i> Figura exclusiva (Funko Pop Variante)
+                </li>
+                <li class="disabled">
+                  <i class="bi bi-x"></i> ¡Artículo sorpresa! (Cada 3 meses)
+                </li>
+                <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
+              </ul>
+              <br />
+
+              <!-- Botón CTA -->
+              <a
+                href="./detalle.html"
+                class="btn btn-dark mt-3"
+                >Ver más</a
+              >
+              <br />
             </div>
+          </div>
+          <!-- Card: Plan Pro (Recomendado) -->
+          <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border-highlight" data-aos="fade-up">
+            <div class="p-4 plan-inner-border-highlight plan-2">
+              <div class="recomendado">Más elegido</div>
+              <!-- Imagen ilustrativa -->
+              <model-viewer
+                disable-zoom
+                disable-pan
+                auto-rotate
+                auto-rotate-delay
+                camera-orbit="0deg 72deg 0.5m"
+                camera-target="auto 2.8cm auto"
+                src="./assets/3d/caja_rojo.glb"
+                alt="avatar"
+                shadow-intensity="0">
+              </model-viewer>
 
-            <!-- Card: Plan Full -->
-            <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border">
-              <div class="p-4 plan-inner-border plan-3">
-                <!-- Imagen ilustrativa -->
-                <model-viewer
-                  disable-zoom
-                  disable-pan
-                  auto-rotate
-                  auto-rotate-delay
-                  camera-orbit="0deg 72deg 0.5m"
-                  camera-target="auto 2.8cm auto"
-                  src="./assets/3d/caja_azul.glb"
-                  alt="avatar"
-                  shadow-intensity="0">
-                </model-viewer>
+              <!-- Título y precio -->
+              <h5 class="plan-name red-book">Codex Frikus</h5>
+              <p class="text-primary plan-precio">$67.500</p>
 
-                <!-- Título y precio -->
-                <h5 class="plan-name blue-book">Maginomicón</h5>
-                <p class="text-primary plan-precio">$120.000</p>
+              <!-- Descripción -->
+              <p class="p-custom">
+                Para fanáticos que buscan una experiencia completa.<br />
+                <strong class="divider-text">Incluye</strong>
+              </p>
 
-                <!-- Descripción -->
-                <p class="p-custom">
-                  Para los fanáticos que buscan trascender universos.<br />
-                  <strong class="divider-text">Incluye</strong>
-                </p>
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-start mx-auto">
+                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+                <li>
+                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
+                  afiliadas
+                </li>
+                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+                <li><i class="bi bi-check2"></i> Sticker pack</li>
+                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+                <li>
+                  <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
+                  Variante)
+                </li>
+                <li class="highlight">
+                  <i class="bi bi-check2"></i> ¡Artículo sorpresa! (Cada 3 meses)
+                </li>
+                <li class="disabled"><i class="bi bi-x"></i> Miniposter</li>
+              </ul>
 
-                <!-- Lista de beneficios -->
-                <ul class="list-unstyled text-start mx-auto">
-                  <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
-                  <li>
-                    <i class="bi bi-check2"></i> 10% de descuento en tiendas
-                    afiliadas
-                  </li>
-                  <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
-                  <li><i class="bi bi-check2"></i> Sticker pack x2</li>
-                  <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
-                  <li>
-                    <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
-                    Variante)
-                  </li>
-                  <li class="highlight">
-                    <i class="bi bi-check2"></i> ¡Artículo sorpresa todos los meses!
-                  </li>
-                  <li><i class="bi bi-check2"></i> Miniposter</li>
-                </ul>
+              <br />
+              <!-- Botón CTA -->
+              <a
+                href="./detalle.html"
+                class="btn btn-dark mt-3"
+                >Ver más</a
+              >
+              <br />
+            </div>
+          </div>
 
-                <br />
-                <!-- Botón CTA -->
-                <a
-                  href="./detalle.html"
-                  class="btn btn-dark mt-3"
-                  >Ver más</a
-                >
-                <br />
-              </div>
+          <!-- Card: Plan Full -->
+          <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border" data-aos="fade-up">
+            <div class="p-4 plan-inner-border plan-3">
+              <!-- Imagen ilustrativa -->
+              <model-viewer
+                disable-zoom
+                disable-pan
+                auto-rotate
+                auto-rotate-delay
+                camera-orbit="0deg 72deg 0.5m"
+                camera-target="auto 2.8cm auto"
+                src="./assets/3d/caja_azul.glb"
+                alt="avatar"
+                shadow-intensity="0">
+              </model-viewer>
+
+              <!-- Título y precio -->
+              <h5 class="plan-name blue-book">Maginomicón</h5>
+              <p class="text-primary plan-precio">$120.000</p>
+
+              <!-- Descripción -->
+              <p class="p-custom">
+                Para los fanáticos que buscan trascender universos.<br />
+                <strong class="divider-text">Incluye</strong>
+              </p>
+
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-start mx-auto">
+                <li><i class="bi bi-check2"></i> Tarjeta MagicTrade</li>
+                <li>
+                  <i class="bi bi-check2"></i> 10% de descuento en tiendas
+                  afiliadas
+                </li>
+                <li><i class="bi bi-check2"></i> Comic / Revista mensual</li>
+                <li><i class="bi bi-check2"></i> Sticker pack x2</li>
+                <li><i class="bi bi-check2"></i> Pin esmaltado coleccionable</li>
+                <li>
+                  <i class="bi bi-check2"></i> Figura exclusiva (Funko Pop
+                  Variante)
+                </li>
+                <li class="highlight">
+                  <i class="bi bi-check2"></i> ¡Artículo sorpresa todos los meses!
+                </li>
+                <li><i class="bi bi-check2"></i> Miniposter</li>
+              </ul>
+
+              <br />
+              <!-- Botón CTA -->
+              <a
+                href="./detalle.html"
+                class="btn btn-dark mt-3"
+                >Ver más</a
+              >
+              <br />
             </div>
           </div>
         </div>
-      </section>
-      <!-- /PLANES DE SUSCRIPCIÓN -->
+      </div>
+    </section>
+    <!-- /PLANES DE SUSCRIPCIÓN -->
 
-      <!-- CONTENIDO: Artículo sorpresa -->
-      <section
-        class="section-spacing container text-center">
-        <h2 class="h2-custom mb-0">Artículo Sorpresa</h2>
-        <p class="p-custom">Cada tercer mes de suscrito obtendrás <strong>recompensas únicas.</strong><br>
-        <span class="highlight-txt">Es acumulable con suscripciones pasadas.</span>
-        </p>
-        <div class="row">
-          <!-- Primera fila -->
-          <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_funko.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Figuras Funko exclusivas
-              </p>
+    <div class="bg-biblio">
+
+    <!-- Temporada -->
+     <div class="section-spacing container text-center" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-center">
+      <h2 class="h2-custom">Temporadas</h2>
+      <p class="p-custom mb-5">Cada 3 meses te sorprendemos con tres nuevas series</p>
+
+          <!-- Ahora -->
+          <div class="row text-start justify-content-center mb-3 gx-0" data-aos-offset="500" data-aos-anchor-placement="center-bottom">
+            <!-- Imagenes -->
+            <div class="col-lg-5 h-100 border-series-izq highlight">
+              <div class="row gx-0 cont-img-tempo">
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2025_1_invencible.jpg" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2025_1_eternauta.jpg" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2025_1_XMEN.webp" alt=""></div>
+              </div>
+            </div>
+
+            <!-- Info -->
+            <div class="col-lg-4 d-flex flex-column justify-content-center p-3 cont-tempo border-series-der highlight">
+                <h5 class="h5-custom accent-txt mb-0"> Viejas nuevas gemas</h3>
+                <small class="sec-color">Enero 2025 a Marzo 2025</small>
+                <p class="p-custom mt-2">Invencible - El Eternauta - X-Men</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_artbook.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Artbooks y Artículos oficiales
-              </p>
+
+          <!-- 1 -->
+          <div class="row text-start justify-content-center mb-3 gx-0" data-aos-offset="500" data-aos-anchor-placement="center-bottom">
+            <!-- Imagenes -->
+            <div class="col-lg-5 h-100 border-series-izq">
+              <div class="row gx-0 cont-img-tempo">
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_4_volveralfuturo.webp" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_4_rezero.webp" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_4_chronoanuts.webp" alt=""></div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_specialcoll.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Ediciones especiales
-              </p>
+
+            <!-- Info -->
+            <div class="col-lg-4 d-flex flex-column justify-content-center p-3 cont-tempo border-series-der">
+                <h5 class="h5-custom highlight-txt mb-0">Un presente del pasado</h3>
+                <small class="sec-color">Octubre 2024 a Diciembre 2024</small>
+                <p class="p-custom mt-2">Volver al Futuro - RE:Zero - Chrononauts</p>
             </div>
           </div>
           
-          <!-- Segunda fila -->
-          <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_indumen.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Indumentaria y accesorios
-              </p>
+          <!-- 2 -->
+          <div class="row text-start justify-content-center mb-3 gx-0" data-aos-offset="500" data-aos-anchor-placement="center-bottom">
+            <!-- Imagenes -->
+            <div class="col-lg-5 h-100 border-series-izq">
+              <div class="row gx-0 cont-img-tempo">
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_3_startrek.jpg" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_3_gundam.jpg" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_3_starwars2.jpg" alt=""></div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_music.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Álbumes de música, VHS y vinilos
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_poster.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Posters únicos de alta calidad
-              </p>
-            </div>
-          </div>
-          <!-- ... repetir estructura para más servicios ... -->
-        </div>
-      </section>
-      <!-- /SERVICES -->
-    </div>
 
-    <!-- CONTACT FORM: Formulario de contacto -->
+            <!-- Info -->
+            <div class="col-lg-4 d-flex flex-column justify-content-center p-3 cont-tempo border-series-der">
+                <h5 class="h5-custom highlight-txt mb-0">Entre las estrellas y el universo</h3>
+                <small class="sec-color">Agosto 2024 a Septiembre 2024</small>
+                <p class="p-custom mt-2">Startrek - Gundam Wing - Star Wars</p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="row text-start justify-content-center mb-3 gx-0" data-aos-offset="500" data-aos-anchor-placement="center-bottom">
+            <!-- Imagenes -->
+            <div class="col-lg-5 h-100 border-series-izq">
+              <div class="row gx-0 cont-img-tempo">
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_4_harry.jpg" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_4_sakura.webp" alt=""></div>
+                <div class="col-4 img-tempo"><img src="assets/img/temporadas/2024_4_shazam.jpg" alt=""></div>
+              </div>
+            </div>
+
+            <!-- Info -->
+            <div class="col-lg-4 d-flex flex-column justify-content-center p-3 cont-tempo border-series-der">
+                <h5 class="h5-custom highlight-txt mb-0">Debajo del velo mágico</h3>
+                <small class="sec-color">Mayo 2024 a Julio 2024</small>
+                <p class="p-custom mt-2">Harry Potter - Sakura Card Captor - Shazam</p>
+            </div>
+          </div>
+          
+     </div>
+    <!-- /Temporada -->
+
+    
+    <!-- Reviews -->
+    <section class="container py-5" data-aos="fade-up" data-aos-duration="500">
+      <h2 class="h2-custom text-center mb-4">¿Qué dicen los miembros?</h2>
+
+      <div id="memberReviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Gabriela M.</h5>
+                                      <p class="card-text p-custom">Es genial!, tengo el Codex Frikus, al tercer mes recibí un artbook exclusivo de Attack on Titan como regalo sorpresa.</p>
+                                      <small class="text-muted-custom">5/03/2022 - <span class="red-book">Codex Frikus</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev2.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Carlos M.</h5>
+                                      <p class="card-text p-custom">Llevo ya 5 meses, a nada de cumplir mi 6to mes, en caso de que no me guste algun producto, puedo intercambiarlo con otro fanático o en alguna tienda asociada. Las que no tenían cambio las vendí para comprar otras.</p>
+                                      <small class="text-muted-custom">24/01/2025 - <span class="red-book">Codex Frikus</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev3.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Violeta</h5>
+                                      <p class="card-text p-custom">Me compre el Maginomicón en la temporada que tenía Volver al Futuro porque es la trilogía favorita de mi papá, jamás pensé que iba a recibir una colección con las tres películas en VHS!!!!</p>
+                                      <small class="text-muted-custom">10/08/2024 - <span class="blue-book">Maginomicón</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+
+              <div class="carousel-item">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev4.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Diego L. S.</h5>
+                                      <p class="card-text p-custom">Me suscribí a la caja Codex Frikus y al tercer mes me vino una figura de Los caballeros del zodiaco, esas figuritas acá en Argentina no se consiguen, valió totalmente la pena.</p>
+                                      <small class="text-muted-custom">19/11/2023 - <span class="red-book">Codex Frikus</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+
+                          
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev5.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Gabriel L.</h5>
+                                      <p class="card-text p-custom">Esto te rinde si te encanta coleccionar o intercambiar activamente. En mi caja de abril vino una remera de Los Simuladores y un pin de Slytherin, no paran de preguntarme de donde los saqué jajaja</p>
+                                      <small class="text-muted-custom">10/07/2023 - <span class="red-book">Maginomicón</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev6.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Leandro M.</h5>
+                                      <p class="card-text p-custom">Llevo meses suscrito y me llené de funkos. no se qué hacer jajajaja</p>
+                                      <small class="text-muted-custom">10/07/2025 - <span class="blue-book">Maginomicón</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+
+                        
+                      </div>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                        
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev7.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Raúl J. S.</h5>
+                                      <p class="card-text p-custom">Tengo una colección entera de objetos de colección de Harry Potter y quería intercambiarlo con alguna persona que pueda cuidar la colección tanto como yo y que no la deje tirada por ahí. El acceso a la comunidad me permitió venderle mi colección a alguna persona que realmente la aprecie.</p>
+                                      <small class="text-muted-custom">23/06/2025 - <span class="green-book">Archimorio</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev8.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Jorge M.</h5>
+                                      <p class="card-text p-custom">De Dragon Ball a los Power Rangers, esa ultima no la esperaba jajajaa. Me llené de figuritas y artículos especiales, recibí incluso las películas de Spiderman en B-Ray. La comunidad de canje es re piola, sin bardear como en otros lados.</p>
+                                      <small class="text-muted-custom">15/07/2025 - <span class="blue-book">Maginomicón</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="col-lg-3 col-md-6 mb-4">
+                              <div class="card h-100 bg-secondary-custom text-white">
+                                  <img src="./assets/img/reviews/rev9.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title h5-custom">Leo G.</h5>
+                                      <p class="card-text p-custom">No sabía qué esperar al inicio, en codex frikus siempre tenés un funko asegurado, no soy fan de los funkos así que siempre los intercambio por otra cosa. Lo del tercer mes es lo mejor ya que siempre te dan algo especial o importado, y la caja que te queda es divina y sirve para guardar cosas.</p>
+                                      <small class="text-muted-custom">28/02/2024 - <span class="red-book">Codex Frikus</span></small>
+                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                        
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+      </div>
+    </section>
+    <!-- /Reviews -->
+
+    
+
+    <!-- Formulario de contacto -->
     <section class="section-spacing container text-center">
       <div
         class="deco-corner-container"
@@ -651,23 +849,24 @@
         <div class="deco-corner vhflip"></div>
       </div>
     </section>
-    <!-- /CONTACT FORM -->
+    <!-- /Formulario de contacto -->
+    </div>
+
 
     <!-- FOOTER: Pie de página -->
     <footer class="text-center py-4">
       <div class="container">
         <div class="row text-md-start text-sm-center">
-          <div class="col-md-3 flex-fill">
-            <div class="bot-line-sec mb-3">
-                          <span class="navbar-brand"
-              >ColecClub</span>
+          <div class="col-md-4 col-lg-3 mb-4 flex-lg-fill d-flex flex-column">
+            <div class="bot-line-sec mb-3 text-center text-md-start mx-auto mx-md-0">
+              <div class="navbar-brand">ColecClub</div>
             </div>
             <h5>Contacto</h5>
             <ul class="list-unstyled">
               <li><a href="mailto:info@colecclub.com.ar"><i class="bi-envelope-fill me-2 accent-txt"></i>info@colecclub.com.ar</a></li>
               <li><a href="wa.me/5491112345678"><i class="bi-telephone-fill me-2 accent-txt"></i>+54 9 11 1234-5678</a></li>
             </ul>
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-2 justify-content-center justify-content-md-start">
               <div><a href="./detalle.html"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -704,7 +903,7 @@
               </a></div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4 col-lg-3 mb-md-5">
             <h5 class="text-uppercase">Acceso rápido</h5>
             <ul class="list-unstyled">
               <li><a href="index.html">Recolectá fantasías</a></li>
@@ -714,7 +913,7 @@
               <li><a href="detalle.html">Contacto</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4 col-lg-3 mb-md-5">
             <ul class="list-unstyled">
               <li><a href="detalle.html" class="accent-txt">Iniciar sesión</a></li>
               <li><a href="detalle.html" class="accent-txt">Registrarse</a></li>
@@ -728,7 +927,9 @@
             </ul>
           </div>
         </div>
-        <div 
+        <div>
+          <div class="d-md-none"><hr></div>
+        
         <p class="p-custom">
           2025 © ColecClub. Todos los derechos reservados.<br />
           <span class="sec-color"
@@ -739,16 +940,6 @@
       </div>
     </footer>
     <!-- /FOOTER -->
-
-    <!-- FOOTER: Pie de página
-    <footer class="text-center py-4">
-      <div class="container">
-        <p class="p-custom">
-          © 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.
-        </p>
-      </div>
-    </footer>
-    /FOOTER -->
 
     <!-- Bootstrap Bundle JS (incluye Popper) -->
     <script
@@ -766,9 +957,9 @@
 
     <!-- Scripts adicionales -->
     <script src="scripts.js"></script>
-      <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

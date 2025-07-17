@@ -38,9 +38,7 @@
     <link
       rel="stylesheet"
       href="styles.css" />
-
-    <link rel="stylesheet" href="css/animate.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Script 3D Model -->
     <script
@@ -126,7 +124,7 @@
       style="min-height: 100vh; padding-top: 100px">
       <div class="row align-items-center justify-content-center" >
         <!-- Texto principal -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="500">
           <h1 class="h1-custom highlight-txt mb-2">Codex Frikus</h1>
           <p class="p-custom mb-0">
             Para fanáticos que buscan una experiencia completa.
@@ -198,7 +196,7 @@
 
 
     <!-- ? INFO DEL ENVIO -->
-    <section class="container pt-0 pb-3">
+    <section class="container pt-0 pb-3" data-aos="fade-up" data-aos-duration="500">
       <div class="row align-items-center justify-content-center gx-0">
           <div class="col-auto justify-content-start text-start"><img src="assets/svg/deco-side.svg" alt="" class="deco-banner-side"></div>
           <div class="col deco-inner-outside">
@@ -211,13 +209,47 @@
           <div class="col-auto justify-content-end text-end"><img src="assets/svg/deco-side.svg" alt="" class="deco-banner-side hflip"></div>
         </div>
           
-    </section>
+    </section>    
+
+      <!-- Temporada -->
+      <section class="section-spacing container text-center" data-aos="fade-up" data-aos-duration="500">
+        <div class="row gx-0">
+          <div class="col-auto d-flex align-items-center"><img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow"></div>
+          <div class="col new-series-section p-5">
+            
+          <div class="mb-4">
+            <h5 class="h5-custom text-uppercase mb-0">Temporada 2025</h5>
+            <h2 class="h2-custom mb-2">Viejas nuevas gemas</h2>
+            <p class="p-custom">Enero 2025 a Marzo 2025</p>
+          </div>
+
+          <div class="row align-items-center justify-content-center new-series">
+            <div class="col-md-4">
+              <img src="./assets/img/series/serie1.jpg" alt="" class="img-thumbnail p-0 mb-2" >
+              <p class="p-custom text-uppercase">Invencible</p>
+            </div>
+            <div class="col-md-4">
+              <img src="./assets/img/series/serie2.jpg" alt="" class="img-thumbnail p-0 mb-2" >
+              <p class="p-custom text-uppercase">El Eternauta</p>
+            </div>
+            <div class="col-md-4">
+              <img src="./assets/img/series/serie3.jpg" alt="" class="img-thumbnail p-0 mb-2" >
+              <p class="p-custom text-uppercase">X-Men</p>
+            </div>
+          </div>
+
+          </div>
+          <div class="col-auto d-flex align-items-center"><img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow hflip"></div>
+        </div>
+
+      </section>
+      <!-- /Temporada -->
 
     <!-- Contenido CAJA -->
-    <section class="section-spacing container text-center bg-contain" style="background-image: url(/assets/bg/bg_nube-izq.png);">
+    <section class="section-spacing container text-center bg-contain" style="background-image: url(/assets/bg/bg_nube-izq.png);" data-aos="fade-up" data-aos-duration="500" data-aos-offset="500">
       <h2 class="h2-custom mb-0">Fragmentos asegurados</h2>
       <div class="row">
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="400">
           <div class="card h-100 p-4">
             <img
               src="./assets/img/circ_enamel.png"
@@ -231,7 +263,7 @@
           </div>
         </div>
         
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="800">
           <div class="card h-100 p-4">
             <img
               src="./assets/img/circ_funko.png"
@@ -245,7 +277,7 @@
           </div>
         </div>
         
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1200">
           <div class="card h-100 p-4">
             <img
               src="./assets/img/circ_comic.png"
@@ -259,7 +291,7 @@
           </div>
         </div>
         
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1600">
           <div class="card h-100 p-4">
             <img
               src="./assets/img/circ_stickers.png"
@@ -277,298 +309,105 @@
     <!-- /SERVICES -->
 
     </div>
-    <!-- CONTENIDO: Artículo sorpresa -->
      
-    <div class="bg-biblio">
-      <section
-        class="section-spacing container text-center">
-        <h2 class="h2-custom mb-2">Artículo Sorpresa</h2>
-        <p class="p-custom">Cada tercer mes de suscrito obtendrás <strong>recompensas únicas.</strong><br>
-        <span class="highlight-txt">Es acumulable con suscripciones pasadas.</span>
-        </p>
-        <div class="row">
-          <!-- Primera fila -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_funko.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Figuras Funko exclusivas
-              </p>
-            </div>
+    <!-- Artículo sorpresa -->
+    <section
+      class="section-spacing container text-center">
+      <h2 class="h2-custom mb-0">Artículo Sorpresa</h2>
+      <p class="p-custom">Cada tercer mes de suscrito obtendrás <strong>recompensas únicas.</strong><br>
+      <span class="highlight-txt">Es acumulable con suscripciones pasadas.</span>
+      </p>
+      <div class="row" >
+        <!-- Primera fila -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-offset="500">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_funko.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Figuras Funko exclusivas
+            </p>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_artbook.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Artbooks y Artículos oficiales
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_specialcoll.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Ediciones especiales
-              </p>
-            </div>
-          </div>
-          
-          <!-- Segunda fila -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_indumen.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Indumentaria y accesorios
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_music.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Álbumes de música, VHS y vinilos
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4">
-              <img
-                src="./assets/img/art_poster.png"
-                class="mb-0"
-                alt="Servicio" />
-              <p class="p-custom top-line">
-                Posters únicos de alta calidad
-              </p>
-            </div>
-          </div>
-          <!-- ... repetir estructura para más servicios ... -->
         </div>
-      </section>
-      <!-- /SERVICES -->
-
-      <!-- Temporada -->
-      <div>
         
-        <section class="section-spacing container text-center" >
-          <div class="row gx-0">
-            <div class="col-auto d-flex align-items-center"><img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow"></div>
-            <div class="col new-series-section p-5">
-              
-            <div class="mb-4">
-              <h5 class="h5-custom text-uppercase mb-0">Temporada 2025</h5>
-              <h2 class="h2-custom mb-2">Viejas nuevas gemas</h2>
-              <p class="p-custom">Enero 2025 a Marzo 2025</p>
-            </div>
-
-            <div class="row align-items-center justify-content-center new-series">
-              <div class="col-md-4">
-                <img src="./assets/img/series/serie1.jpg" alt="" class="img-thumbnail rounded p-0 mb-2" >
-                <p class="p-custom text-uppercase">Serie 1</p>
-              </div>
-              <div class="col-md-4">
-                <img src="./assets/img/series/serie2.jpg" alt="" class="img-thumbnail rounded p-0 mb-2" >
-                <p class="p-custom text-uppercase">Serie 1</p>
-              </div>
-              <div class="col-md-4">
-                <img src="./assets/img/series/serie3.jpg" alt="" class="img-thumbnail rounded p-0 mb-2" >
-                <p class="p-custom text-uppercase">Serie 1</p>
-              </div>
-            </div>
-
-            </div>
-            <div class="col-auto d-flex align-items-center"><img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow hflip"></div>
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-offset="500">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_artbook.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Artbooks y Artículos oficiales
+            </p>
           </div>
+        </div>
 
-        </section>
-      </div>
-      <!-- /Temporada -->
-    </div>  
-
-    <!-- Reviews -->
-    <section class="container py-5">
-      <h2 class="h2-custom text-center mb-4">¿Qué dicen los miembros?</h2>
-
-      <div id="memberReviewsCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-
-              <div class="carousel-item active">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Gabriela M.</h5>
-                                      <p class="card-text p-custom">Es genial!, tengo el Codex Frikus, al tercer mes recibí un artbook exclusivo de Attack on Titan como regalo sorpresa.</p>
-                                      <small class="text-muted-custom">5/03/2022 - <span class="red-book">Codex Frikus</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Carlos M.</h5>
-                                      <p class="card-text p-custom">Llevo ya 5 meses, a nada de cumplir mi 6to mes, en caso de que no me guste algun producto, puedo intercambiarlo con otro fanático o en alguna tienda asociada. Las que no tenían cambio las vendí para comprar otras.</p>
-                                      <small class="text-muted-custom">24/01/2025 - <span class="red-book">Codex Frikus</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Violeta</h5>
-                                      <p class="card-text p-custom">Me compre el Maginomicón en la temporada que tenía Volver al Futuro porque es la trilogía favorita de mi papá, jamás pensé que iba a recibir una colección con las tres películas en VHS!!!!</p>
-                                      <small class="text-muted-custom">10/08/2024 - <span class="blue-book">Maginomicón</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-
-              <div class="carousel-item">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Diego L. S.</h5>
-                                      <p class="card-text p-custom">Me suscribí a la caja Codex Frikus y al tercer mes me vino una figura de Los caballeros del zodiaco, esas figuritas acá en Argentina no se consiguen, valió totalmente la pena.</p>
-                                      <small class="text-muted-custom">19/11/2023 - <span class="red-book">Codex Frikus</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-
-                          
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Gabriel L.</h5>
-                                      <p class="card-text p-custom">Esto te rinde si te encanta coleccionar o intercambiar activamente. En mi caja de abril vino una remera de Los Simuladores y un pin de Slytherin, no paran de preguntarme de donde los saqué jajaja</p>
-                                      <small class="text-muted-custom">10/07/2023 - <span class="red-book">Maginomicón</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                          
-                          
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Gabriel L.</h5>
-                                      <p class="card-text p-custom">Esto te rinde si te encanta coleccionar o intercambiar activamente. En mi caja de abril vino una remera de Los Simuladores y un pin de Slytherin, no paran de preguntarme de donde los saqué jajaja</p>
-                                      <small class="text-muted-custom">10/07/2023 - <span class="blue-book">Maginomicón</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-
-                        
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                        
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Raúl J. S.</h5>
-                                      <p class="card-text p-custom">Tengo una colección entera de objetos de colección de Harry Potter y quería intercambiarlo con alguna persona que pueda cuidar la colección tanto como yo y que no la deje tirada por ahí. El acceso a la comunidad me permitió venderle mi colección a alguna persona que realmente la aprecie.</p>
-                                      <small class="text-muted-custom">23/06/2025 - <span class="green-book">Archimorio</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                          
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Jorge M.</h5>
-                                      <p class="card-text p-custom">De Dragon Ball a los Power Rangers, esa ultima no la esperaba jajajaa. Me llené de figuritas y artículos especiales, recibí incluso las películas de Spiderman en B-Ray. La comunidad de canje es re piola, sin bardear como en otros lados.</p>
-                                      <small class="text-muted-custom">15/07/2025 - <span class="blue-book">Maginomicón</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                          
-                          <div class="col-lg-3 col-md-6 mb-4">
-                              <div class="card h-100 bg-secondary-custom text-white">
-                                  <img src="./assets/img/reviews/rev1.jpg" class="card-img-top card-img-y250px bg-contain" alt="Review Image 1">
-                                  <div class="card-body">
-                                      <h5 class="card-title h5-custom">Leo G.</h5>
-                                      <p class="card-text p-custom">No sabía qué esperar al inicio, en codex frikus siempre te tenés un Funko asegurado, no soy fan de los funkos así que siempre los intercambio por otra cosa. Lo del tercer mes es lo mejor ya que siempre te dan algo especial o importado.</p>
-                                      <small class="text-muted-custom">28/02/2024 - <span class="red-book">Codex Frikus</span></small>
-                                      <span class="float-end text-success highlight-txt"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"><i class="bi bi-star"></i></i></span>
-                                  </div>
-                              </div>
-                          </div>
-                        
-                      </div>
-                  </div>
-              </div>
-
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-offset="500">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_specialcoll.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Ediciones especiales
+            </p>
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
-
-          <div class="carousel-indicators">
-              <button type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#memberReviewsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!-- Segunda fila -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_indumen.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Indumentaria y accesorios
+            </p>
           </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_music.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Álbumes de música, VHS y vinilos
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250">
+          <div class="card h-100 p-4">
+            <img
+              src="./assets/img/art_poster.png"
+              class="mb-0"
+              alt="Servicio" />
+            <p class="p-custom top-line">
+              Posters únicos de alta calidad
+            </p>
+          </div>
+        </div>
+        <!-- ... repetir estructura para más servicios ... -->
       </div>
     </section>
-    <!-- /Reviews -->
+    <!-- /Artículo sorpresa -->
 
     <!-- FAQ -->
-    <section class="section-spacing container text-center">
+    <section class="section-spacing container text-center" data-aos="fade-up" data-aos-duration="500">
       <div
         class="deco-corner-container"
         style="margin-bottom: -50px">
         <div class="deco-corner"></div>
         <div class="deco-corner hflip"></div>
       </div>
-      <div class="deco-container1 container">
+      <div class="deco-container1 container ps-3 pe-3 pt-5 pb-5">
         <h2 class="h2-custom mb-2">Preguntas frecuentes</h2>
         <p class="p-custom">¿Tu pregunta no está en la lista? <a href="./index.html" class="accent-txt">Contactanos</a></p>
-        <div class="row justify-content-center text-start">
+        <div class="row justify-content-center text-start  pb-4">
           <div class="col-md-8 mt-3">
             
             <div class="accordion mt-2" id="faqAccordion">
@@ -755,17 +594,17 @@ Si tu envio no llega dentro de la semana estimada, contactanos vía mail en nues
         <div class="deco-corner vhflip"></div>
       </div>
     </section>
-    <!-- /CONTACT FORM -->
-     
+    <!-- /FAQ -->
+         
 
     <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-    <section class="section-spacing container-fluid text-center">
+    <section class="section-spacing container-fluid text-center" data-aos="fade-up" data-aos-duration="500">
       <div class="row align-items-center justify-content-center">
         <h2 class="h2-custom">¿Queres ver otro grimorio?</h2>
 
         <div class="row mt-5 mb-5 col-md-10 justify-content-center">
           <!-- Card: Plan Básico -->
-          <div class="col-lg-4 mb-4 plan-border">
+          <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border" data-aos="fade-up">
             <div class="p-4 plan-inner-border plan-1">
               <!-- Imagen ilustrativa -->
               <model-viewer
@@ -819,8 +658,9 @@ Si tu envio no llega dentro de la semana estimada, contactanos vía mail en nues
               <br />
             </div>
           </div>
+
           <!-- Card: Plan Full -->
-          <div class="col-lg-4 mb-4 plan-border">
+          <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border" data-aos="fade-up">
             <div class="p-4 plan-inner-border plan-3">
               <!-- Imagen ilustrativa -->
               <model-viewer
@@ -993,15 +833,9 @@ Si tu envio no llega dentro de la semana estimada, contactanos vía mail en nues
 
     <!-- Scripts adicionales -->
     <script src="scripts.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-    <script type="importmap">
-    {
-      "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@0.178.0/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.178.0/examples/jsm/"
-      }
-    }
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

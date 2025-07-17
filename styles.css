@@ -300,7 +300,9 @@ section h2 {
 /* 6. CARDS */
 
 .card-img-y250px {
-  max-height: 250px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card {
@@ -391,6 +393,31 @@ footer h5 {
 
 /* 10. IMÁGENES */
 
+.cont-tempo {
+  background-color: var(--secondary-dark-color);
+}
+
+.cont-tempo:first {
+  border: 2px solid var(--primary-color);
+}
+
+.img-tempo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 180px;
+  /*clip-path: polygon(2rem 0%, 100% 0%, calc(100% - 2rem) 100%, 0% 100%);*/
+}
+
+.img-tempo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .new-series-section {
   background-color: var(--secondary-dark-color75);
   border: 2px solid var(--yellow-note);
@@ -418,10 +445,21 @@ img.rounded-circle {
 
 .bg-hero {
   /* BG */
-  background-image: url("assets/bg/bg_hero.png");
+  background-image: url("./assets/bg/bg_hero.png");
   background-repeat: no-repeat;
   background-position: 0% -1%;
   background-size: 2200px auto;
+}
+
+.bg-dark {
+  background-color: var(--secondary-dark-color) !important;
+}
+
+.bg-dark75 {
+  background-color: var(--dark-color50);
+}
+
+.bgbright {
 }
 
 .bg-bookred {
@@ -435,6 +473,41 @@ img.rounded-circle {
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: 100%, 100%, 120vh auto;
   animation: cloud-bg-move 20s linear infinite;
+}
+
+.bg-bookblue {
+  background-image: linear-gradient(
+      0deg,
+      rgba(13, 25, 56, 1) 00%,
+      rgba(13, 25, 56, 0) 60%
+    ),
+    linear-gradient(90deg, rgba(13, 25, 56, 0.5) 20%, rgba(13, 25, 56, 0) 50%),
+    url("./assets/bg/pat-nu-blue_dk.png");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: 100%, 100%, 120vh auto;
+  animation: cloud-bg-move 20s linear infinite;
+}
+
+.bg-bookblue.centered {
+  background-image: linear-gradient(
+      0deg,
+      rgba(13, 25, 56, 1) 0%,
+      rgba(13, 25, 56, 0) 20%,
+      rgba(13, 25, 56, 0) 20%,
+      rgba(13, 25, 56, 1) 100%
+    ),
+    linear-gradient(90deg, rgba(13, 25, 56, 0.5) 20%, rgba(13, 25, 56, 0) 50%),
+    url("./assets/bg/pat-nu-blue_dk.png");
+}
+
+.bg-bookblue.bgbright {
+  background-image: linear-gradient(
+      0deg,
+      rgba(13, 25, 56, 1) 00%,
+      rgba(13, 25, 56, 0) 60%
+    ),
+    linear-gradient(90deg, rgba(13, 25, 56, 0.5) 20%, rgba(13, 25, 56, 0) 50%),
+    url("./assets/bg/pat-nu-blue.png");
 }
 
 .bg-biblio {
@@ -561,6 +634,8 @@ img.rounded-circle {
 /* ! DECOS */
 /** ============================== */
 
+/* Flechas individuales*/
+
 .deco-side-arrow {
   height: 200px;
 }
@@ -572,6 +647,31 @@ img.rounded-circle {
   height: auto;
   align-self: center;
   aspect-ratio: 100/70;
+}
+
+/* Borde de series */
+
+.border-series-izq {
+  border-width: 2px 0px 2px 2px;
+  border-color: var(--secondary-dark-color);
+  border-style: solid;
+  position: relative;
+  border-radius: 1rem 0 0 1rem;
+  overflow: hidden;
+}
+
+.border-series-der {
+  border-radius: 0rem 1rem 1rem 0rem;
+  border-width: 2px 2px 2px 0px;
+  border-color: var(--secondary-dark-color);
+  border-style: solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.border-series-der.highlight,
+.border-series-izq.highlight {
+  border-color: var(--primary-color);
 }
 
 /* Bordes de planes */
@@ -845,6 +945,11 @@ img.rounded-circle {
   display: block;
   position: absolute;
   background-color: var(--yellow-note);
+  z-index: -4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   clip-path: polygon(
     calc(100% - 60px) 2px,
     calc(100% - 60px) 2px,
@@ -1126,11 +1231,6 @@ img.rounded-circle {
     calc(100% - 60px) 1.6566079009641e-31px,
     calc(100% - 60px) 0px
   );
-  z-index: -4;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .deco-corner-container {
@@ -1194,6 +1294,16 @@ img.rounded-circle {
   gap: 0.5rem;
   margin-top: 0.5rem;
   align-self: stretch;
+}
+
+.divider-text.div-25::before,
+.divider-text.div-25::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: var(--yellow-note);
+  height: 1px;
+  width: 25%;
 }
 
 .divider-text::before,
@@ -1312,7 +1422,6 @@ model-viewer {
   margin-top: 1em;
   margin-bottom: -0.25rem !important;
   z-index: 0;
-  display: none;
 }
 
 model-viewer.pagdet {
@@ -1546,7 +1655,7 @@ model-viewer.pagdet {
 }
 
 .accordion-button.collapsed {
-  background-color: var(--secondary-dark-color);
+  background-color: transparent;
   border: none;
   font-weight: 600;
 }
@@ -1569,6 +1678,12 @@ model-viewer.pagdet {
 /* ! MEDIA QUERIES */
 /** ============================== */
 
+/* xs - menor 576 */
+/* sm - mayor o igual a 576 */
+/* md mayor o igual a 768 */
+/* lg - mayor o igual a 992 */
+/* xl - mayor o igual a 1200 */
+/* xxl - mayor o igual a 1400 */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -1589,6 +1704,28 @@ model-viewer.pagdet {
   .bg-hero {
     background-size: 1800px auto;
     background-position: 20% -0%;
+  }
+
+  .bg-contain {
+    background-size: cover;
+  }
+
+  .img-tempo {
+    height: 150px;
+  }
+
+  .img-tempo > img {
+    object-fit: cover;
+  }
+
+  .border-series-der {
+    border-radius: 0rem 0rem 1rem 1rem;
+    border-width: 0px 2px 2px 2px;
+  }
+
+  .border-series-izq {
+    border-radius: 1rem 1rem 0rem 0rem;
+    border-width: 2px 2px 0px 2px;
   }
 }
 
