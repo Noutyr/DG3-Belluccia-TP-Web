@@ -200,25 +200,49 @@
 
 
     <!-- ? INFO DEL ENVIO -->
-    <section class="container pt-0 pb-3" data-aos="fade-up" data-aos-duration="500">
-      <div class="row align-items-center justify-content-center gx-0">
-          <div class="col-auto justify-content-start text-start"><img src="assets/svg/deco-side.svg" alt="" class="deco-banner-side"></div>
-          <div class="col deco-inner-outside">
+    <section class="container pt-0 pb-3 gap-0 gx-0" data-aos="fade-up" data-aos-duration="500">
+      
+        <div class="row d-flex d-md-none justify-content-center">
+          <div class="col-8">
+            <img src="assets/svg/deco-side-t.svg" alt="" class="deco-banner-side">
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center gx-0">
+          <div class="col-auto justify-content-start text-start d-none d-md-block">
+            <img src="assets/svg/deco-side.svg" alt="" class="deco-banner-side">
+          </div>
+
+          <div class="col-8 col-md deco-inner-outside">
             <div class="row deco-inner-inside text-center w-100 m-0 pt-3">
               <div class="col-md-4"><h5 class="h5-custom highlight-txt">Envío gratis a todo el país</h5><p class="p-custom">Enviamos todos los productos protegidos y con seguimiento.</p></div>
               <div class="col-md-4"><h5 class="h5-custom highlight-txt">Calidad asegurada</h5><p class="p-custom">Trabajamos con marcas oficiales y artistas reconocidos de la industria.</p></div>
               <div class="col-md-4"><h5 class="h5-custom highlight-txt">Comunidad coleccionista</h5><p class="p-custom">Unite a nuestra comunidad fanática e intercambiá tus duplicados.</p></div>
             </div>            
           </div>
-          <div class="col-auto justify-content-end text-end"><img src="assets/svg/deco-side.svg" alt="" class="deco-banner-side hflip"></div>
+
+          <div class="col-auto justify-content-end text-end d-none d-md-block">
+            <img src="assets/svg/deco-side.svg" alt="" class="deco-banner-side hflip">
+          </div>
+        </div>
+        
+        <div class="row d-flex d-md-none align-items-center justify-content-center">
+          <div class="col-8">
+            <img src="assets/svg/deco-side-t.svg" alt="" class="deco-banner-side vflip">
+          </div>            
         </div>
           
     </section>    
 
       <!-- Temporada -->
-      <section class="section-spacing container text-center" data-aos="fade-up" data-aos-duration="500">
+      <section class="section-spacing container text-center gap-0 g-0" data-aos="fade-up" data-aos-duration="500">
+        <div class="row d-flex d-md-none align-items-center">
+          <img src="./assets/svg/banner-deco-t.svg" class="deco-side-arrow vflip">
+        </div>
         <div class="row gx-0">
-          <div class="col-auto d-flex align-items-center"><img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow"></div>
+          <div class="col-auto d-none d-md-flex align-items-center">
+            <img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow">
+          </div>
           <div class="col new-series-section p-5">
             
           <div class="mb-4">
@@ -228,24 +252,26 @@
           </div>
 
           <div class="row align-items-center justify-content-center new-series">
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <img src="./assets/img/series/serie1.jpg" alt="" class="img-thumbnail p-0 mb-2" >
               <p class="p-custom text-uppercase">Invencible</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <img src="./assets/img/series/serie2.jpg" alt="" class="img-thumbnail p-0 mb-2" >
               <p class="p-custom text-uppercase">El Eternauta</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <img src="./assets/img/series/serie3.jpg" alt="" class="img-thumbnail p-0 mb-2" >
               <p class="p-custom text-uppercase">X-Men</p>
             </div>
           </div>
 
           </div>
-          <div class="col-auto d-flex align-items-center"><img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow hflip"></div>
+          <div class="col-auto d-none d-md-flex align-items-center"><img src="./assets/svg/banner-deco.svg" alt="" class="deco-side-arrow hflip"></div>
         </div>
-
+        <div class="row d-flex d-md-none align-items-center">
+          <img src="./assets/svg/banner-deco-t.svg" class="deco-side-arrow">
+        </div>
       </section>
       <!-- /Temporada -->
 
@@ -612,9 +638,9 @@ Si tu envio no llega dentro de la semana estimada, contactanos vía mail en nues
       <div class="row align-items-center justify-content-center">
         <h2 class="h2-custom">¿Queres ver otro grimorio?</h2>
 
-        <div class="row mt-5 mb-5 col-md-10 justify-content-center">
+        <div class="row mt-5 mb-5 col-lg-7 justify-content-center">
           <!-- Card: Plan Básico -->
-          <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border" data-aos="fade-up">
+          <div class="col col-sm-6 col-lg-6 mb-4 plan-border" data-aos="fade-up">
             <div class="p-4 plan-inner-border plan-1">
               <!-- Imagen ilustrativa -->
               <model-viewer
@@ -670,7 +696,7 @@ Si tu envio no llega dentro de la semana estimada, contactanos vía mail en nues
           </div>
 
           <!-- Card: Plan Full -->
-          <div class="col-10 col-sm-6 col-lg-4 mb-4 plan-border" data-aos="fade-up">
+          <div class="col col-sm-6 col-lg-6 mb-4 plan-border" data-aos="fade-up">
             <div class="p-4 plan-inner-border plan-3">
               <!-- Imagen ilustrativa -->
               <model-viewer
@@ -729,7 +755,7 @@ Si tu envio no llega dentro de la semana estimada, contactanos vía mail en nues
       </div>
     </section>
     <!-- /PLANES DE SUSCRIPCIÓN -->
-</div>
+    </div>
     <!-- FOOTER: Pie de página -->
     <footer class="text-center py-4">
       <div class="container">
@@ -817,16 +843,6 @@ Si tu envio no llega dentro de la semana estimada, contactanos vía mail en nues
       </div>
     </footer>
     <!-- /FOOTER -->
-
-    <!-- FOOTER: Pie de página
-    <footer class="text-center py-4">
-      <div class="container">
-        <p class="p-custom">
-          © 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.
-        </p>
-      </div>
-    </footer>
-    /FOOTER -->
 
     <!-- Bootstrap Bundle JS (incluye Popper) -->
     <script
