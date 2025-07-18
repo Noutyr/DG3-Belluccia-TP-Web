@@ -435,6 +435,14 @@ footer h5 {
   object-position: center;
 }
 
+.img-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 2rem;
+}
+
 .new-series-section {
   background-color: var(--secondary-dark-color75);
   border: 2px solid var(--yellow-note);
